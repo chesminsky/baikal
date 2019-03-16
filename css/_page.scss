@@ -26,6 +26,47 @@
   background: url(../img/logo.svg);
 
   position: absolute;
-  left: 12%;
+  left: 10%;
   top: 300px;
+}
+
+.header {
+  height: 931px;
+
+  &__left {
+    margin: 61px 20px;
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 42px;
+    }
+  }
+}
+
+.caption {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #a8b1ba;
+}
+
+.business {
+  margin-top: 155px;
+  article {
+    width: 475px;
+    margin-left: 240px;
+  }
+
+  h2 {
+    font-size: 49px;
+    line-height: 58px;
+    color: #333;
+    margin: 14px 0;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 37px;
+    margin: 26px 0;
+  }
 }
