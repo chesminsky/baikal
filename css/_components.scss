@@ -18,16 +18,31 @@
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-
+  outline: none !important;
   color: #ffffff;
 
   padding: 17px 46px;
   cursor: pointer;
-}
 
-.btn--gradient {
-  background: linear-gradient(105.74deg, #24aeff 0%, #b478ff 100%);
-  &:hover {
-    box-shadow: 0px 12px 20px rgba(134, 138, 255, 0.5);
+  &--gradient {
+    background: linear-gradient(105.74deg, #24aeff 0%, #b478ff 100%);
+    &:hover {
+      box-shadow: 0px 12px 20px rgba(134, 138, 255, 0.5);
+    }
+  }
+  
+  &--green {
+    background: #71CB00;
+    &:hover {
+      box-shadow: 0px 12px 20px rgba(152, 213, 0, 0.592);
+    }
+  }
+
+  &--blue {
+    background: #24AEFF;
+    &:hover {
+      box-shadow: 0px 12px 20px rgba(36, 174, 255, 0.38);
+    }
   }
 }
+

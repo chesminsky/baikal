@@ -104,6 +104,31 @@
     top: -225px;
     margin-left: -101px;
   }
+  &__img {
+    float: right;
+    margin: -39px 9px;
+  }
+  &__footer {
+    padding: 21px 0;
+    .btn {
+      margin-bottom: 30px;
+    }
+  }
+  &__link {
+    font-size: 19px;
+    line-height: 22px;
+    margin-right: 10px;
+    color: #31a6ea;
+  }
+  &__pdf {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+
+    color: #9ab5c4;
+    text-decoration: none;
+    font-weight: 700;
+  }
   article {
     width: 475px;
     margin-left: 240px;
