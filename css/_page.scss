@@ -35,10 +35,25 @@
 
   &__left {
     margin: 61px 20px;
+    float: left;
     li {
       display: inline-block;
       vertical-align: middle;
       margin-right: 42px;
+    }
+  }
+
+  &__right {
+    margin: 98px 20px;
+    float: right;
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 42px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
   }
 
