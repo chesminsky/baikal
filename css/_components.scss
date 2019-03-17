@@ -5,6 +5,22 @@
   color: #a8b1ba;
 }
 
+.rules-link {
+  font-size: 19px;
+  line-height: 22px;
+  margin-right: 10px;
+  color: #31a6ea;
+}
+.pdf {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1px;
+
+  color: #9ab5c4;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .demo-box {
   padding: 20px;
   display: inline-block;
@@ -42,6 +58,13 @@
     background: #24AEFF;
     &:hover {
       box-shadow: 0px 12px 20px rgba(36, 174, 255, 0.38);
+    }
+  }
+
+  &--purple {
+    background: #B478FF;
+    &:hover {
+      box-shadow: 0px 12px 20px rgba(180, 120, 255, 0.352);
     }
   }
 }

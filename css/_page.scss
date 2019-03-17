@@ -20,7 +20,6 @@
   height: 375px;
   width: 100%;
   position: absolute;
-  top: 2324px;
   left: 0;
   right: 0;
   z-index: -1;
@@ -128,21 +127,6 @@
       margin-bottom: 30px;
     }
   }
-  &__link {
-    font-size: 19px;
-    line-height: 22px;
-    margin-right: 10px;
-    color: #31a6ea;
-  }
-  &__pdf {
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 1px;
-
-    color: #9ab5c4;
-    text-decoration: none;
-    font-weight: 700;
-  }
   article {
     width: 475px;
     margin-left: 240px;
@@ -195,4 +179,50 @@
     color: #000000;
   }
   
+}
+
+.smi {
+  margin-top: 155px;
+  position: relative;
+
+  &__dash {
+    position: absolute;
+    left: 50%;
+    top: -113px;
+    margin-left: -44px;
+  }
+  &__img {
+    float: left;
+    margin: 42px 0 0 54px;
+  }
+  &__footer {
+    padding: 21px 0;
+    .btn {
+      margin-bottom: 30px;
+    }
+  }
+  &__links {
+    float: right;
+    margin: 21px 0 0 0px;
+    text-align: right;
+  }
+  article {
+    width: 456px;
+    margin: 106px 0 0 37px;
+    padding: 0;
+    float: left;
+  }
+
+  h2 {
+    font-size: 49px;
+    line-height: 58px;
+    color: #333;
+    margin: 14px 0;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 37px;
+    margin: 26px 0;
+  }
 }
