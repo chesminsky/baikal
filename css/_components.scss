@@ -36,9 +36,12 @@
   text-transform: uppercase;
   outline: none !important;
   color: #ffffff;
-
+  position: relative;
   padding: 17px 46px;
   cursor: pointer;
+  &:active {
+    top: 1px;
+  }
 
   &--gradient {
     background: linear-gradient(105.74deg, #24aeff 0%, #b478ff 100%);

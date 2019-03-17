@@ -178,12 +178,17 @@
     text-align: center;
     color: #000000;
   }
-  
 }
 
 .smi {
   margin-top: 155px;
   position: relative;
+
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
 
   &__dash {
     position: absolute;
@@ -224,5 +229,41 @@
     font-size: 22px;
     line-height: 37px;
     margin: 26px 0;
+  }
+}
+
+.plan {
+  margin-top: 288px;
+  position: relative;
+
+  &__dash {
+    position: absolute;
+    left: 50%;
+    top: -258px;
+    margin-left: -264px;
+  }
+  &__img {
+    margin: -81px 0 0 -52px;
+    position: relative;
+    z-index: -1;
+  }
+  article {
+    width: 370px;
+    margin: 0 0 0 136px;
+    float: left;
+  }
+
+  h2 {
+    font-size: 49px;
+    line-height: 58px;
+    color: #333;
+    margin: 9px 0 17px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    margin: 0 0 10px 0;
   }
 }
