@@ -59,7 +59,7 @@
   height: 931px;
 
   &__left {
-    margin: 61px 20px;
+    margin: 61px 0 0 60px;
     float: left;
     li {
       display: inline-block;
@@ -245,18 +245,24 @@
 }
 
 .plan {
-  margin-top: 288px;
+  margin-top: 201px;
   position: relative;
+  &__item {
+    height: 600px;
+    padding-top: 85px;
+    position: relative;
+  }
 
   &__dash {
     position: absolute;
     left: 50%;
-    top: -258px;
+    top: -169px;
     margin-left: -264px;
   }
   &__img {
-    margin: -81px 0 0 -52px;
-    position: relative;
+    position: absolute;
+    top: 8px;
+    right: 143px;
     z-index: -1;
   }
   article {
@@ -281,7 +287,7 @@
 }
 
 .register {
-  margin-top: 288px;
+  margin-top: 231px;
   padding-top: 67px;
   position: relative;
   text-align: center;
@@ -357,7 +363,7 @@
     li {
       display: block;
       &:hover {
-        opacity: .9;
+        opacity: 0.9;
       }
     }
   }

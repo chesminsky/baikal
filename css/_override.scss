@@ -1,0 +1,47 @@
+.slick-next {
+    background: url(../img/next.png);
+    right: 224px;
+}
+
+.slick-prev {
+    background: url(../img/prev.png);
+    left: 508px;
+}
+
+.slick-arrow {
+    height: 108px;
+    width: 100px;
+    border-radius: 50%;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+    position: absolute;
+    top: 278px;
+    z-index: 2;
+    color: transparent;
+}
+
+.slick-dots {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 599px;
+    justify-content: center;
+    li {
+        padding: 0 15px;
+    }
+    li button{
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 2px solid #D3DEB6;
+        outline: none !important;
+        cursor: pointer;
+        color:transparent;
+        background: transparent;
+    }
+    .slick-active button {
+        background: #D3DEB6;
+    }
+}
