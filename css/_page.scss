@@ -41,6 +41,25 @@
       margin-right: 42px;
     }
   }
+
+  &__layer {
+    height: 275px;
+    width: 385px;
+    background: url(../img/header-layer.png) no-repeat;
+    position: absolute;
+    top: 276px;
+    right: 18%;
+    padding: 36px;
+    text-align: center;
+
+    p {
+      font-size: 19px;
+      line-height: 31px;
+      text-align: center;
+
+      color: #000000;
+    }
+  }
 }
 
 .lang-link {
@@ -48,7 +67,8 @@
   opacity: 0.5;
   text-decoration: none;
   margin-right: 18px;
-  img, span {
+  img,
+  span {
     vertical-align: middle;
   }
   span {
@@ -57,13 +77,6 @@
   &.is-active {
     opacity: 1;
   }
-}
-
-.caption {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #a8b1ba;
 }
 
 .business {
