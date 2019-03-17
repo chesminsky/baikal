@@ -43,6 +43,22 @@
   }
 }
 
+.lang-link {
+  display: inline-block;
+  opacity: 0.5;
+  text-decoration: none;
+  margin-right: 18px;
+  img, span {
+    vertical-align: middle;
+  }
+  span {
+    color: white;
+  }
+  &.is-active {
+    opacity: 1;
+  }
+}
+
 .caption {
   font-size: 14px;
   line-height: 18px;
