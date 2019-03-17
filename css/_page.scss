@@ -25,12 +25,24 @@
   z-index: -1;
 }
 
+.mountains {
+  background-image: url(../img/mountains.png);
+  background-size: 1920px 802px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 802px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .page {
   max-width: 1440px;
   border: solid 1px black;
   margin: 0 auto;
   position: relative;
-  height: 5000px;
 }
 
 .logo {
@@ -265,5 +277,64 @@
     line-height: 30px;
     color: #333333;
     margin: 0 0 10px 0;
+  }
+}
+
+.register {
+  margin-top: 288px;
+  padding-top: 67px;
+  position: relative;
+  text-align: center;
+
+  &__dash {
+    position: absolute;
+    left: 50%;
+    top: -112px;
+    margin-left: -40px;
+  }
+
+  h2 {
+    font-size: 49px;
+    line-height: 56px;
+    color: #333333;
+    margin: 0;
+  }
+
+  &__row {
+    margin-top: 104px;
+  }
+
+  &__box {
+    display: inline-block;
+    width: 360px;
+    height: 471px;
+    background: #ffffff;
+    box-shadow: 0px 30px 90px rgba(29, 43, 57, 0.17);
+    border-radius: 20px;
+    position: relative;
+    padding: 97px 60px 0;
+    margin: 0 17px;
+    img {
+      position: absolute;
+      top: -37px;
+      margin-left: -60px;
+      left: 50%;
+    }
+    h3 {
+      font-size: 30px;
+      line-height: 39px;
+      text-align: center;
+
+      color: #585e65;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+
+      color: #333333;
+      margin-bottom: 42px;
+    }
   }
 }
