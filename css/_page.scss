@@ -96,6 +96,14 @@
 
 .business {
   margin-top: 155px;
+  position: relative;
+
+  &__dash {
+    position: absolute;
+    left: 50%;
+    top: -225px;
+    margin-left: -101px;
+  }
   article {
     width: 475px;
     margin-left: 240px;
