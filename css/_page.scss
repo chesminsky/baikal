@@ -22,6 +22,7 @@
   background-repeat: no-repeat;
   height: 931px;
   width: 100%;
+  font-weight: 600;
 
   &__left {
     margin: 61px 0 0 60px;
@@ -54,14 +55,14 @@
     position: absolute;
     top: 276px;
     right: 18%;
-    padding: 36px;
+    padding: 36px 40px;
     text-align: center;
 
     p {
       font-size: 19px;
       line-height: 31px;
       text-align: center;
-
+      font-weight: 600;
       color: #000000;
     }
   }
