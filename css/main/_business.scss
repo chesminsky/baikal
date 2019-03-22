@@ -38,6 +38,10 @@
     .btn {
       margin-bottom: 30px;
     }
+    text-align: center;
+    @media (min-width: 1024px) {
+      text-align: left;
+    }
   }
 
   h2 {
