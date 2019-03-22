@@ -1,6 +1,11 @@
 .business {
   position: relative;
-  margin: 0 20px;
+  margin: 20px 20px 0;
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
 
   @media (min-width: 1024px) {
     margin: 155px 0 0;

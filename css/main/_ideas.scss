@@ -1,0 +1,64 @@
+.ideas {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+
+  @media (min-width: 1024px) {
+    margin: 102px 0 0;
+    .ideas__dash {
+      display: block;
+    }
+  }
+
+  .clouds {
+    background-image: url(../img/clouds.png);
+    background-size: 1920px 375px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 375px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 273px;
+  }
+
+  &__article {
+    text-align: center;
+    margin: 0 20px;
+    @media (min-width: 1024px) {
+      width: 570px;
+      margin: 0 auto;
+    }
+  }
+  &__dash {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: -162px;
+    margin-left: -66px;
+  }
+  &__img {
+    padding: 35px 20px;
+    @media (min-width: 1024px) {
+      padding: 0;
+      margin: 35px 0;
+    }
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 35px;
+  }
+
+  p {
+    font-size: 19px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+  }
+}
