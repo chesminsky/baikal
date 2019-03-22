@@ -153,49 +153,6 @@
       right: auto;
     }
   }
-
-  // mobile menu opened
-  &.is-mobile-opened {
-    background-image: none;
-    background-color: #658cee;
-    height: auto;
-    padding-bottom: 100px;
-
-    .header__lang {
-      position: absolute;
-      bottom: -90px;
-      left: 0;
-      right: 0;
-      display: block;
-      width: 100%;
-      .lang-link:last-child {
-        margin-right: 0;
-      }
-    }
-
-    .header__layer {
-      display: none;
-    }
-
-    .header__right {
-      display: block;
-      border-top: 1px solid #d8e7ef;
-      margin: 20px;
-      padding-top: 30px;
-    }
-
-    .logo {
-      display: none;
-    }
-
-    .icon-close {
-      display: inline-block;
-    }
-
-    .burger {
-      display: none;
-    }
-  }
 }
 
 .dropdown {
@@ -235,10 +192,10 @@
 
     &--copy {
       &::after {
-        content: '';
+        content: "";
         height: 21px;
         width: 21px;
-        background: url('../../img/copy.png');
+        background: url("../../img/copy.png");
         display: block;
         position: absolute;
         top: 50%;
@@ -249,10 +206,10 @@
 
     &--exit {
       &:after {
-        content: '';
+        content: "";
         height: 20px;
         width: 21px;
-        background: url('../../img/exit.png');
+        background: url("../../img/exit.png");
         display: block;
         position: absolute;
         top: 50%;
@@ -292,5 +249,57 @@
   }
   &.is-active {
     opacity: 1;
+  }
+}
+
+// mobile menu opened
+.is-menu-opened {
+  @media (max-width: 1024px) {
+    > * {
+      display: none;
+    }
+
+    .header {
+      background-image: none;
+      background-color: #658cee;
+      height: auto;
+      padding-bottom: 100px;
+      display: block;
+    }
+
+    .header__lang {
+      position: absolute;
+      bottom: -90px;
+      left: 0;
+      right: 0;
+      display: block;
+      width: 100%;
+      .lang-link:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .header__layer {
+      display: none;
+    }
+
+    .header__right {
+      display: block;
+      border-top: 1px solid #d8e7ef;
+      margin: 20px;
+      padding-top: 30px;
+    }
+
+    .logo {
+      display: none;
+    }
+
+    .icon-close {
+      display: inline-block;
+    }
+
+    .burger {
+      display: none;
+    }
   }
 }

@@ -38,4 +38,12 @@ $(document).ready(function () {
             $(this).next().removeClass('is-active');
         }
     });
+
+    // menu 
+    $('#js-open-menu').click(function() {
+        $('body').addClass('is-menu-opened');
+    });
+    $('#js-close-menu').click(function() {
+        $('body').removeClass('is-menu-opened');
+    });
 });
