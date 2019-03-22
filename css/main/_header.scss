@@ -156,12 +156,6 @@
 
   // mobile menu opened
   &.is-mobile-opened {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
     background-image: none;
     background-color: #658cee;
 
@@ -214,6 +208,46 @@
     padding-left: 50px;
   }
 
+  &__links {
+    border-bottom: 1px solid #d8e7ef;
+    padding: 28px 28px 8px;
+  }
+
+  &__link {
+    color: #31a6ea;
+    position: relative;
+    height: 50px;
+    padding: 15px 0 15px 50px;
+
+    &--copy {
+      &::after {
+        content: '';
+        height: 21px;
+        width: 21px;
+        background: url('../../img/copy.png');
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        margin-top: -10px;
+      }
+    }
+
+    &--exit {
+      &:after {
+        content: '';
+        height: 20px;
+        width: 21px;
+        background: url('../../img/exit.png');
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 17px;
+        margin-top: -11px;
+      }
+    }
+  }
+
   &__team {
     padding: 28px;
   }
@@ -223,7 +257,7 @@
     padding: 15px 0;
   }
 
-  &__team-caption {
+  &__caption {
     font-size: 14px;
     color: #6a6a6a;
     padding-left: 50px;
