@@ -1,4 +1,5 @@
 @import "./main/header";
+@import "./main/business";
 
 .container {
   max-width: 1440px;
@@ -7,45 +8,6 @@
   position: relative;
   &--wide {
     max-width: 1920px;
-  }
-}
-
-.business {
-  margin-top: 155px;
-  position: relative;
-
-  &__dash {
-    position: absolute;
-    left: 50%;
-    top: -225px;
-    margin-left: -101px;
-  }
-  &__img {
-    float: right;
-    margin: -39px 9px;
-  }
-  &__footer {
-    padding: 21px 0;
-    .btn {
-      margin-bottom: 30px;
-    }
-  }
-  &__article {
-    width: 475px;
-    margin-left: 240px;
-  }
-
-  h2 {
-    font-size: 49px;
-    line-height: 58px;
-    color: #333;
-    margin: 14px 0;
-  }
-
-  p {
-    font-size: 22px;
-    line-height: 37px;
-    margin: 26px 0;
   }
 }
 
