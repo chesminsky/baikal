@@ -32,6 +32,14 @@
   width: 100%;
   font-weight: 600;
 
+  &__top {
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
   &__left {
     padding: 43px 10px;
     width: 100%;
@@ -42,7 +50,6 @@
     @media (min-width: 1024px) {
       margin: 19px 0 0 60px;
       width: auto;
-      float: left;
     }
 
     li {
@@ -84,6 +91,7 @@
 
   &__lang {
     display: none;
+    margin-right: 0 !important;
     img {
       display: none;
     }
@@ -125,9 +133,9 @@
   &__right {
     margin: 76px 0 0;
     display: none;
+    white-space: nowrap;
 
     @media (min-width: 1024px) {
-      float: right;
       display: block;
     }
   }
@@ -171,9 +179,9 @@
 }
 
 .dropdown {
+  border: 1px transparent solid;
   border-radius: 10px;
   text-align: left !important;
-  margin: 0 20px;
   font-weight: normal;
   position: relative;
   z-index: 1;
@@ -252,8 +260,11 @@
   }
 
   @media (min-width: 1024px) {
-    max-width: 355px;
+    width: 360px;
     margin: 0 20px 0 -20px;
+    .dropdown__user {
+      cursor: pointer;
+    }
     .dropdown__username {
       white-space: nowrap;
       overflow: hidden;
@@ -282,12 +293,29 @@
 // mobile menu opened
 .is-menu-opened {
   .dropdown {
-      background: #ffffff;
-      box-shadow: 0px 30px 90px rgba(29, 43, 57, 0.4);
+    background: #ffffff;
+    box-shadow: 0px 30px 90px rgba(29, 43, 57, 0.4);
+    display: inline-block;
+  }
+
+  .dropdown__user {
+    border-bottom: 1px solid #d8e7ef;
+  }
+
+  .dropdown__links {
+    display: block;
+  }
+
+  .dropdown__team {
+    display: block;
   }
   @media (max-width: 1024px) {
     > * {
       display: none;
+    }
+
+    .dropdown {
+      display: block;
     }
 
     .header {
@@ -334,22 +362,6 @@
 
     .burger {
       display: none;
-    }
-
-    .dropdown {
-      display: block;
-    }
-
-    .dropdown__user {
-      border-bottom: 1px solid #d8e7ef;
-    }
-
-    .dropdown__links {
-      display: block;
-    }
-
-    .dropdown__team {
-      display: block;
     }
   }
 }

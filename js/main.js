@@ -46,4 +46,7 @@ $(document).ready(function () {
     $('#js-close-menu').click(function() {
         $('body').removeClass('is-menu-opened');
     });
+    $('#js-toggle-menu').click(function() {
+        $('body').toggleClass('is-menu-opened');
+    });
 });
