@@ -1,88 +1,10 @@
+@import "./main/header";
+
 .container {
   max-width: 1440px;
   // border: solid 1px black;
   margin: 0 auto;
   position: relative;
-}
-
-.logo {
-  width: 511px;
-  height: 294px;
-  background: url(../img/logo.svg);
-
-  position: absolute;
-  left: 10%;
-  top: 300px;
-}
-
-.header {
-  background-image: url(../img/background.png);
-  background-size: 1920px 931px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 931px;
-  width: 100%;
-  font-weight: 600;
-
-  &__left {
-    margin: 61px 0 0 60px;
-    float: left;
-    li {
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 42px;
-    }
-  }
-
-  &__right {
-    margin: 98px 20px;
-    float: right;
-    li {
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 42px;
-      a {
-        text-decoration: none;
-        color: white;
-      }
-    }
-  }
-
-  &__layer {
-    height: 275px;
-    width: 385px;
-    background: url(../img/header-layer.png) no-repeat;
-    position: absolute;
-    top: 276px;
-    right: 18%;
-    padding: 36px 40px;
-    text-align: center;
-
-    p {
-      font-size: 19px;
-      line-height: 31px;
-      text-align: center;
-      font-weight: 600;
-      color: #000000;
-    }
-  }
-}
-
-.lang-link {
-  display: inline-block;
-  opacity: 0.5;
-  text-decoration: none;
-  margin-right: 18px;
-  img,
-  span {
-    vertical-align: middle;
-  }
-  span {
-    color: white;
-  }
-  &.is-active {
-    opacity: 1;
-  }
 }
 
 .business {
