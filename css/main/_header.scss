@@ -40,7 +40,7 @@
     align-items: center;
 
     @media (min-width: 1024px) {
-      margin: 61px 0 0 60px;
+      margin: 19px 0 0 60px;
       width: auto;
       float: left;
     }
@@ -91,29 +91,28 @@
 
   &__menu-item {
     font-weight: 700;
+
+    display: block;
+    text-align: center;
+    margin: 0 0 30px;
+    @media (min-width: 1024px) {
+      display: inline-block;
+      vertical-align: top;
+      margin: 27px 42px 0 0;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 
   &__right {
-    margin: 70px 0 0;
+    margin: 76px 0 0;
     display: none;
-    > li {
-      display: block;
-      text-align: center;
-      margin: 0 0 30px;
-      @media (min-width: 1024px) {
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 42px 0 0;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-      }
-    }
 
     @media (min-width: 1024px) {
-      margin: 98px 20px;
       float: right;
+      display: block;
     }
   }
 
@@ -162,6 +161,9 @@
   text-align: left !important;
   margin: 0 20px;
   font-weight: normal;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
 
   &__user {
     padding: 28px;
@@ -300,6 +302,10 @@
 
     .burger {
       display: none;
+    }
+
+    .dropdown {
+      display: block;
     }
   }
 }
