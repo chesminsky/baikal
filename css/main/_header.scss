@@ -133,9 +133,9 @@
   &__right {
     margin: 76px 0 0;
     display: none;
-    white-space: nowrap;
 
     @media (min-width: 1024px) {
+      white-space: nowrap;
       display: block;
     }
   }
@@ -264,6 +264,17 @@
     margin: 0 20px 0 -20px;
     .dropdown__user {
       cursor: pointer;
+      &:after {
+        content: "";
+        width: 9px;
+        height: 7px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 13px;
+        margin-top: -6px;
+        background: url("../../img/arrow.png");
+      }
     }
     .dropdown__username {
       white-space: nowrap;
@@ -300,6 +311,11 @@
 
   .dropdown__user {
     border-bottom: 1px solid #d8e7ef;
+    @media (min-width: 1024px) {
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
   }
 
   .dropdown__links {
