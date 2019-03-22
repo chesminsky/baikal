@@ -33,20 +33,23 @@
   font-weight: 600;
 
   &__left {
-    margin: 43px 10px 0;
-    float: left;
+    padding: 43px 0 0;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
     @media (min-width: 1024px) {
       margin: 61px 0 0 60px;
       width: auto;
+      float: left;
     }
+
     li {
-      display: inline-block;
       vertical-align: middle;
-      width: 33%;
-      padding: 0 10px;
       text-align: center;
+      width: 33%;
+      padding: 0 15px;
       img {
         max-width: 100%;
       }
@@ -55,8 +58,27 @@
         padding: 0;
         margin-right: 42px;
         width: auto;
+        display: inline-block;
       }
     }
+
+    .burger {
+      width: 29px;
+      height: 23px;
+      display: inline-block;
+      background: url('../../img/burger.svg');
+      cursor: pointer;
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+
+  &__lang {
+    display: none;
+    @media (min-width: 1024px) {
+      display: inline-block;
+    }      
   }
 
   &__right {
