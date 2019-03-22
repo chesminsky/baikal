@@ -33,12 +33,29 @@
   font-weight: 600;
 
   &__left {
-    margin: 61px 0 0 60px;
+    margin: 43px 10px 0;
     float: left;
+    width: 100%;
+
+    @media (min-width: 1024px) {
+      margin: 61px 0 0 60px;
+      width: auto;
+    }
     li {
       display: inline-block;
       vertical-align: middle;
-      margin-right: 42px;
+      width: 33%;
+      padding: 0 10px;
+      text-align: center;
+      img {
+        max-width: 100%;
+      }
+      @media (min-width: 1024px) {
+        text-align: left;
+        padding: 0;
+        margin-right: 42px;
+        width: auto;
+      }
     }
   }
 
