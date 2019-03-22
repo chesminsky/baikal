@@ -1,0 +1,67 @@
+.plan {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  position: relative;
+  @media (min-width: 1024px) {
+    margin-top: 201px;
+  }
+  &__item {
+    height: 600px;
+    padding-top: 85px;
+    position: relative;
+    margin: 0 20px;
+    @media (min-width: 1024px) {
+      margin: 0;
+    }
+  }
+
+  &__dash {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: -169px;
+    margin-left: -264px;
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  }
+  &__img {
+    max-width: 100%;
+    margin-left: -20px;
+    margin-bottom: 20px;
+    @media (min-width: 1024px) {
+      margin-left: 0;
+      position: absolute;
+      top: 8px;
+      right: 143px;
+      z-index: -1;
+    }
+  }
+  &__article {
+    @media (min-width: 1024px) {
+      width: 370px;
+      margin: 0 0 0 136px;
+      float: left;
+    }
+  }
+
+  h2 {
+    font-size: 36px;
+    @media (min-width: 1024px) {
+      font-size: 49px;
+    }
+    line-height: 58px;
+    color: #333;
+    margin: 9px 0 17px;
+  }
+
+  p {
+    font-size: 16px;
+    @media (min-width: 1024px) {
+      font-size: 18px;
+    }
+    line-height: 30px;
+    color: #333333;
+    margin: 0 0 10px 0;
+  }
+}

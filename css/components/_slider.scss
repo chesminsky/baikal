@@ -1,50 +1,56 @@
 .slick-next {
-    background: url(../img/next.png);
+  background: url(../img/next.png);
+  right: 10px;
+  @media (min-width: 1024px) {
     right: 224px;
+  }
 }
 
 .slick-prev {
-    background: url(../img/prev.png);
+  background: url(../img/prev.png);
+  left: 10px;
+  @media (min-width: 1024px) {
     left: 508px;
+  }
 }
 
 .slick-arrow {
-    height: 108px;
-    width: 100px;
-    border-radius: 50%;
-    border: none;
-    outline: none !important;
-    cursor: pointer;
-    position: absolute;
-    top: 278px;
-    z-index: 2;
-    color: transparent;
+  height: 108px;
+  width: 100px;
+  border-radius: 50%;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  color: transparent;
 }
 
 .slick-dots {
-    display: flex;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 599px;
-    justify-content: center;
-    li {
-        padding: 0 15px;
-    }
-    li button{
-        height: 16px;
-        width: 16px;
-        border-radius: 50%;
-        border: 2px solid #7BA21C;
-        display: block;
-        outline: none !important;
-        cursor: pointer;
-        color:transparent;
-        background: transparent;
-        padding: 0;
-        margin: 0;
-    }
-    .slick-active button {
-        background: #7BA21C;
-    }
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  justify-content: center;
+  li {
+    padding: 0 15px;
+  }
+  li button {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 2px solid #7ba21c;
+    display: block;
+    outline: none !important;
+    cursor: pointer;
+    color: transparent;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+  }
+  .slick-active button {
+    background: #7ba21c;
+  }
 }

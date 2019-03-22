@@ -56,7 +56,10 @@
   }
 
   p {
-    font-size: 19px;
+    font-size: 16px;
+    @media (min-width: 1024px) {
+      font-size: 18px;
+    }
     line-height: 27px;
     text-align: center;
     color: #000000;

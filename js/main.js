@@ -3,7 +3,8 @@ $(document).ready(function () {
     $('.js-slider').slick({
         dots: true,
         infinite: false,
-        draggable: false
+        draggable: false,
+        adaptiveHeight: true
     });
 
     function toggleArrows(event, slick, currentSlide) {
