@@ -1,34 +1,50 @@
 body {
-    font-family: 'GloberM', Helvetica, sans-serif;
-    font-weight: normal;
-    font-style: normal;
+  font-family: "GloberM", Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'GloberM xBold';
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "GloberM xBold";
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-    display: block;
+  display: block;
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 .tar {
-    text-align: right !important;
+  text-align: right !important;
 }
 
 .tac {
-    text-align: center !important;
+  text-align: center !important;
+}
+
+.bold {
+  font-weight: 600 !important;
+}
+
+.bolder {
+  font-weight: 700 !important;
+}
+
+.black {
+  color: #000000 !important;
 }

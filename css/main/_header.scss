@@ -96,7 +96,7 @@
   &__right {
     margin: 70px 0 0;
     display: none;
-    >li {
+    > li {
       display: block;
       text-align: center;
       margin: 0 0 30px;
@@ -201,7 +201,7 @@
   &__user {
     padding: 28px;
     position: relative;
-    border-bottom: 1px solid #D8E7EF;
+    border-bottom: 1px solid #d8e7ef;
   }
 
   &__av {
@@ -221,6 +221,12 @@
     position: relative;
     height: 50px;
     padding: 15px 0;
+  }
+
+  &__team-caption {
+    font-size: 14px;
+    color: #6a6a6a;
+    padding-left: 50px;
   }
 }
 
