@@ -33,7 +33,7 @@
   font-weight: 600;
 
   &__left {
-    padding: 43px 0 0;
+    padding: 43px 10px 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -49,7 +49,7 @@
       vertical-align: middle;
       text-align: center;
       width: 33%;
-      padding: 0 15px;
+      padding: 0 10px;
       img {
         max-width: 100%;
       }
@@ -71,6 +71,14 @@
       @media (min-width: 1024px) {
         display: none;
       }
+    }
+
+    .icon-close {
+      width: 23px;
+      height: 23px;
+      display: none;
+      background: url('../../img/close.svg');
+      cursor: pointer;
     }
   }
 
@@ -160,8 +168,8 @@
       height: 1px;
       position: absolute;
       top: 130px;
-      left: 15px;
-      right: 15px;
+      left: 20px;
+      right: 20px;
     }
 
     .header__layer {
@@ -173,6 +181,14 @@
     }
 
     .logo {
+      display: none;
+    }
+
+    .icon-close {
+      display: inline-block;
+    }
+
+    .burger {
       display: none;
     }
   }
