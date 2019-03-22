@@ -35,13 +35,16 @@
         height: 16px;
         width: 16px;
         border-radius: 50%;
-        border: 2px solid #D3DEB6;
+        border: 2px solid #7BA21C;
+        display: block;
         outline: none !important;
         cursor: pointer;
         color:transparent;
         background: transparent;
+        padding: 0;
+        margin: 0;
     }
     .slick-active button {
-        background: #D3DEB6;
+        background: #7BA21C;
     }
 }

@@ -1,29 +1,34 @@
 .caption {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #a8b1ba;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #a8b1ba;
+  font-weight: 700;
+}
+
+.link {
+  font-size: 19px;
+  line-height: 22px;
+  margin-right: 10px;
+  color: #31a6ea;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  &:hover {
+    border-bottom: none;
   }
-  
-  .rules-link {
-    font-size: 19px;
-    line-height: 22px;
-    margin-right: 10px;
-    color: #31a6ea;
-  }
-  .pdf {
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 1px;
-  
-    color: #9ab5c4;
-    text-decoration: none;
-    font-weight: 700;
-  }
-  
-  .demo-box {
-    padding: 20px;
-    float: left;
-    width:25%;
-  }
-  
+}
+.pdf {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1px;
+
+  color: #9ab5c4;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.demo-box {
+  padding: 20px;
+  float: left;
+  width: 25%;
+}
