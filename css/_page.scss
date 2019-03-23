@@ -3,6 +3,8 @@
 @import "./main/ideas";
 @import "./main/smi";
 @import "./main/plan";
+@import "./main/register";
+@import "./main/footer";
 
 .container {
   max-width: 1440px;
@@ -11,107 +13,5 @@
   position: relative;
   &--wide {
     max-width: 1920px;
-  }
-}
-
-
-.register {
-  .mountains {
-    background-image: url(../img/mountains.png);
-    background-size: 1920px 802px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 802px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    top:-380px;
-  }
-
-  margin-top: 231px;
-  padding-top: 67px;
-  position: relative;
-  text-align: center;
-
-  &__dash {
-    position: absolute;
-    left: 50%;
-    top: -184px;
-    margin-left: -40px;
-  }
-
-  h2 {
-    font-size: 49px;
-    line-height: 56px;
-    color: #333333;
-    margin: 0;
-  }
-
-  &__row {
-    margin-top: 104px;
-  }
-
-  &__box {
-    display: inline-block;
-    width: 360px;
-    height: 471px;
-    background: #ffffff;
-    box-shadow: 0px 30px 90px rgba(29, 43, 57, 0.17);
-    border-radius: 20px;
-    position: relative;
-    padding: 97px 40px 0;
-    margin: 0 17px;
-    img {
-      position: absolute;
-      top: -37px;
-      margin-left: -60px;
-      left: 50%;
-    }
-    h3 {
-      font-size: 30px;
-      line-height: 39px;
-      text-align: center;
-
-      color: #585e65;
-      margin-bottom: 15px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 30px;
-      text-align: center;
-
-      color: #333333;
-      margin-bottom: 42px;
-    }
-  }
-}
-
-.footer {
-  margin: 155px 0 74px;
-  text-align: center;
-  h3 {
-    font-size: 19px;
-    line-height: 28px;
-    text-align: center;
-
-    color: #333333;
-  }
-  &__social {
-    display: flex;
-    justify-content: center;
-    padding: 9px 0 0 0;
-    margin: 0 0 43px 0;
-    li {
-      display: block;
-      &:hover {
-        opacity: 0.9;
-      }
-    }
-  }
-  &__link {
-    font-size: 15px;
-    line-height: 22px;
   }
 }

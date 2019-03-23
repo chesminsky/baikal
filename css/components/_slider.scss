@@ -35,7 +35,10 @@
   bottom: -50px;
   justify-content: center;
   li {
-    padding: 0 15px;
+    @media (min-width: 1024px) {
+      padding: 0 15px;
+    }
+    padding: 0 10px;
   }
   li button {
     height: 16px;
