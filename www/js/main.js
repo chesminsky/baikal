@@ -3,7 +3,8 @@ $(document).ready(function () {
     $('.js-slider').slick({
         dots: true,
         infinite: false,
-        draggable: false
+        draggable: false,
+        adaptiveHeight: true
     });
 
     function toggleArrows(event, slick, currentSlide) {
@@ -45,5 +46,8 @@ $(document).ready(function () {
     });
     $('#js-close-menu').click(function() {
         $('body').removeClass('is-menu-opened');
+    });
+    $('#js-toggle-menu').click(function() {
+        $('body').toggleClass('is-menu-opened');
     });
 });
