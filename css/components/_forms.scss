@@ -21,16 +21,16 @@
   }
 
   &__text {
-		background: #f0f2f3;
-		border-radius: 4px;
+    background: #f0f2f3;
+    border-radius: 4px;
     width: 100%;
     border: none;
     outline: none;
     transition: all 0.1s ease-out 0s;
     padding: 31px 17px 10px;
     font-size: 17px;
-		color: #333333;
-		border: 2px solid transparent;
+    color: #333333;
+    border: 2px solid transparent;
 
     &:focus {
       box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
@@ -45,6 +45,66 @@
     &[disabled] {
       border: 2px solid #efefef;
       background: transparent;
+    }
+  }
+}
+
+.input--checkbox {
+	padding-top: 6px;
+	.input__label {
+		font-size: 16px;
+		line-height: 24px;
+		color: #29313a;
+	}
+}
+
+.input__checkbox {
+  display: none;
+
+  & + span {
+    user-select: none;
+    &::before {
+      position: relative;
+      top: 10px;
+
+      display: inline-block;
+      box-sizing: border-box;
+      margin-right: 10px;
+
+      content: "";
+      cursor: pointer;
+			background: #F0F2F3;
+      border-radius: 2px;
+      outline: none;
+
+      width: 30px;
+      height: 30px;
+      transition: background-color 0.3s ease;
+    }
+  }
+
+  &:checked + span {
+    &::before {
+      content: "";
+
+      border: none;
+      background-color: #e9f4a2;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAYAAADUFP50AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEISURBVHgBnZIxUsJAFIbf21jYmCWdTR7LDTwCdLaeQD2B3sC0VnoDKb2FegIo7YSlkY6kZ5d/YZJhEpgQ/plMJjvv+/P/LyE6U9xl2EBr578ixSPVBVw790LMs6CLUyER8+TJP0RMg1OZbcRU+l5EsvKstSOYHnpNGJN2Pq/e1hrVhV7ERjEP6o7DY1DoVY9YKopjPdFaX+Z5/lMzNM77T0T8t9beNcEkWZKn957WtA9fwRC3a/LusSiK3wZYrFbTWCdhSVkJI9obet3iGi8W9vVQjWqrqcgYj/c4+UaCISLOsJBR+NiHwOrPiZR6xvA0QDtLzo5BDYWFiPT/UjEf1FVgb4JB29wGtYJahfqqbqYAAAAASUVORK5CYII=);
+			background-repeat: no-repeat;
+      background-position: 9px 7px;
+      background-size: 14px 15px;
+    }
+  }
+
+  &[disabled] + span {
+    &::before {
+			background-color: #F0F2F3;
+    }
+  }
+
+  &[disabled]:checked + span {
+    &::before {
+			background-color: #F0F2F3;
     }
   }
 }

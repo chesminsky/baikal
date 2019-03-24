@@ -14,4 +14,10 @@
   &--wide {
     max-width: 1920px;
   }
+
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
 }
