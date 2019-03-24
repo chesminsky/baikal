@@ -88,14 +88,22 @@
   // -- other pages --
 
   &__form {
-    max-width: 406px;
+    max-width: 426px;
     margin: 0 auto;
     text-align: left;
-    padding-bottom: 100px;
+    padding: 0 10px 100px;
 
     a {
       color: #31a6ea;
       text-decoration: none;
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 37px;
+      font-weight: normal;
+      font-family: "GloberM", Helvetica, sans-serif;
+      color: #000000;
     }
   }
 }
