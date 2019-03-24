@@ -48,10 +48,10 @@
     }
 
     &--left {
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #eee;
       @media (min-width: 1024px) {
         border-bottom: none;
-        border-right: 1px solid #ccc;
+        border-right: 1px solid #eee;
       }
     }
   }
