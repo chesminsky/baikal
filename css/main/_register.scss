@@ -84,4 +84,18 @@
       margin-bottom: 42px;
     }
   }
+
+  // -- other pages --
+
+  &__form {
+    max-width: 406px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 100px;
+
+    a {
+      color: #31a6ea;
+      text-decoration: none;
+    }
+  }
 }

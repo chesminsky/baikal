@@ -11,7 +11,7 @@
     pointer-events: none;
     transition: all 0.1s ease-out 0s;
     font-size: 17px;
-    color: #333333;
+    color: #758191;
 
     &.is-active {
       top: 12px;
@@ -50,7 +50,6 @@
 }
 
 .input--checkbox {
-	padding-top: 6px;
 	.input__label {
 		font-size: 16px;
 		line-height: 24px;
@@ -63,9 +62,13 @@
 
   & + span {
     user-select: none;
+    display: block;
+    padding-left: 50px;
+    padding-top: 21px;
     &::before {
-      position: relative;
-      top: 10px;
+      position: absolute;
+      top: 17px;
+      left: 0;
 
       display: inline-block;
       box-sizing: border-box;
