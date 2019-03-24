@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Охотники за травами</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container container--wide">
+        <div class="header__top">
+            <ul class="header__left">
+                <li>
+                    <img src="img/logo_sm_1.png" alt="">
+                </li>
+                <li>
+                    <img src="img/logo_sm_2.png" alt="">
+                </li>
+                <li class="header__mobile-controls">
+                    <div class="burger" id="js-open-menu"></div>
+                    <div class="icon-close" id="js-close-menu"></div>
+                </li>
+                <li class="header__lang">
+                    <a href="#" class="lang-link is-active">
+                        <img src="img/ru.png" alt="">
+                        <span>RU</span>
+                    </a>
+                    <a href="#" class="lang-link">
+                        <img src="img/en.png" alt="">
+                        <span>EN</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header__right">
+                <li class="header__menu-item">
+                    <a href="#">
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#">
+                        <span>Войти</span>
+                    </a>
+                </li>
+
+                <li class="header__dropdown dropdown">
+                    <div class="dropdown__user">
+                        <img class="dropdown__av" src="img/av.png" alt="">
+                        <div class="dropdown__username" id="js-toggle-menu">
+                            Константин Константинопольский
+                        </div>
+                    </div>
+                    <div class="dropdown__links">
+                        <div class="dropdown__caption">
+                            Ссылка скопирована
+                        </div>
+                        <ul>
+                            <li class="dropdown__link dropdown__link--copy">
+                                Скопировать
+                                реферальную ссылку
+                            </li>
+                            <li class="dropdown__link dropdown__link--exit">
+                                Выйти
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown__team">
+                        <div class="dropdown__caption">
+                            В команде так же состоят:
+                        </div>
+                        <ul>
+                            <li class="dropdown__team-member">
+                                <img class="dropdown__av" src="img/av.png" alt="">
+                                <div class="dropdown__username">
+                                    Евгения Орлова
+                                </div>
+                            </li>
+                            <li class="dropdown__team-member">
+                                <img class="dropdown__av" src="img/av.png" alt="">
+                                <div class="dropdown__username">
+                                    Евгения Лололова
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="dropdown__caption bold black">
+                            Осталось 3 места
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="logo"></div>
+        <div class="header__layer">
+            <p>
+                Напиши лучшее эссе или спланируй лучший эко-проект и получи тур на Байкал!
+            </p>
+            <button class="btn btn--gradient">
+                участвовать
+            </button>
+        </div>
+    </div>
+</header>
+
+    <!-- popup -->
+    <div class="overlay">
+        <div class="popup">
+            <i class="popup__close"></i>
+            <div class="popup__row">
+                <div class="popup__column popup__column--left">
+                    <div class="popup__caption">
+                        Пишу эссе
+                    </div>
+                    <ul class="social">
+                        <li>
+                            <a href="#">
+                                <img src="img/vk.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/fb.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/inst.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/google.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="popup__column popup__column--right">
+                    <div class="popup__caption">
+                        Состою в команде
+                    </div>
+                    <form>
+                        <label class="input">
+                            <input type="text" class="input__text">
+                            <span class="input__caption">
+                                Номер договора
+                            </span>
+                        </label>
+                        <label class="input">
+                            <input type="password" class="input__text">
+                            <span class="input__caption">
+                                Пароль
+                            </span>
+                        </label>
+                        <button type="submit" class="btn btn--green">
+                            войти
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
