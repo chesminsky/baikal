@@ -1,5 +1,10 @@
+<% if(main){ %>
 <header class="header">
     <div class="container container--wide">
+<% } else{ %>  
+<header class="header header--form">
+    <div class="container">
+ <% } %>
         <div class="header__top">
             <ul class="header__left">
                 <li>
@@ -81,6 +86,7 @@
                 </li>
             </ul>
         </div>
+        <% if(main){ %>
         <div class="logo"></div>
         <div class="header__layer">
             <p>
@@ -90,5 +96,6 @@
                 участвовать
             </button>
         </div>
+        <% } %>
     </div>
 </header>
