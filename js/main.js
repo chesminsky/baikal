@@ -40,6 +40,18 @@ $(document).ready(function () {
         }
     });
 
+    // select
+    $('.input--select').on('click', function(e) {
+        if ($(this).find('input').is(':disabled')) {
+            return;
+        }
+        $(this).toggleClass('is-opened');
+    });
+    $('.input--select__item').on('click', function(e) {
+        $(this).parent().siblings('.input--select__value').html($(this).html());
+        $(this).parent().siblings('input[type="hidden"]').val($(this).html().trim());
+    });
+
     // menu 
     $('#js-open-menu').click(function() {
         $('body').addClass('is-menu-opened');

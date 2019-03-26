@@ -1,4 +1,4 @@
-// --- forms ---
+// --- basic input ---
 .input {
   position: relative;
   display: block;
@@ -53,6 +53,7 @@
   }
 }
 
+// --- checkbox ---
 .input--checkbox {
 	.input__label {
 		font-size: 16px;
@@ -112,6 +113,65 @@
   &[disabled]:checked + span {
     &::before {
 			background-color: #F0F2F3;
+    }
+  }
+}
+
+// --- select ---
+.input--select {
+  cursor: pointer;
+  &__value {
+    @extend .input__text;
+    display: block;
+    padding-left: 15px;
+    padding-right: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+  [disabled] + .input--select__value {
+    @extend .input__text[disabled];
+  }
+
+  &:after {
+    width: 12px;
+    height: 7px;
+    background: url('../../img/select-arrow.png');
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -4px;
+  }
+
+  .input__caption {
+    @extend .is-active;
+  }
+
+  &__dropdown {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #f0f2f3;
+  }
+  
+  &__item {
+    padding: 17px 30px 17px 17px;
+    &:hover {
+      background: rgba(0,0,0,.05);
+    }
+  }
+
+  &.is-opened {
+    .input--select__dropdown {
+      display: block;
+    }
+    &:after {
+      transform: rotate(180deg);
     }
   }
 }
