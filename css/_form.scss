@@ -1,0 +1,33 @@
+.form {
+  max-width: 920px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid black;
+  margin-top: -210px;
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  &__header {
+    font-size: 49px;
+    color: #ffffff;
+
+    &-info {
+      font-size: 17px;
+      position: relative;
+      padding-left: 30px;
+      font-family: "GloberM", Helvetica, sans-serif;
+      &:after {
+        content: '';
+        height: 22px;
+        width: 22px;
+        background: url('../img/info_outline.svg');
+        position: absolute;
+        left: 0;
+        top: -4px;
+      }
+    }
+  }
+}

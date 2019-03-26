@@ -31,6 +31,7 @@
   &--form {
     background-image: url(../img/bg-form.png);
     background-size: 1440px 507px;
+    height: 507px;
   }
 
   background-position: top center;
@@ -280,13 +281,14 @@
         top: 50%;
         right: 13px;
         margin-top: -6px;
-        background: url("../../img/arrow.png");
+        background: url("../../img/arrow-down-white.png");
       }
     }
     .dropdown__username {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      color: #fff;
     }
   }
 }
@@ -318,11 +320,13 @@
 
   .dropdown__user {
     border-bottom: 1px solid #d8e7ef;
-    @media (min-width: 1024px) {
-      &:after {
-        transform: rotate(180deg);
-      }
+    &:after {
+      background: url("../../img/arrow-up-black.png");
     }
+  }
+
+  .dropdown__username {
+    color: #000;
   }
 
   .dropdown__links {
