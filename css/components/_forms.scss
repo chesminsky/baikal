@@ -17,6 +17,11 @@
       top: 12px;
       left: 17px;
       font-size: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      padding-right: 30px;
     }
   }
 
@@ -41,9 +46,7 @@
     }
 
     &:focus ~ .input__caption {
-      top: 12px;
-      left: 17px;
-      font-size: 13px;
+      @extend .is-active
     }
 
     &[disabled] {

@@ -35,6 +35,10 @@
     }
   }
 
+  &__section {
+    margin-bottom: 90px;
+  }
+
   &__banner {
     width: 658px;
     height: 121px;
@@ -72,15 +76,36 @@
     margin-bottom: 25px;
   }
 
+  textarea {
+    height: 145px;
+    resize: none;
+  }
+
   &__row {
     display: flex;
   }
 
+  &__full {
+    max-width: 860px;
+  }
+
   &__group {
     width: 400px;
-    margin-right: 60px;
+    margin-right: 20px;
     .input {
       margin-bottom: 30px;
+    }
+  }
+
+  &__hint {
+    line-height: 22px;
+    color: #333;
+    font-size: 14px;
+    p {
+      margin-top: 0;
+    }
+    &--padded {
+      padding: 17px 0;
     }
   }
 }
