@@ -1,8 +1,11 @@
 .form {
+
+  height: 5000px;
+  // border: 1px solid black;
+
   max-width: 920px;
   margin: 0 auto;
   position: relative;
-  border: 1px solid black;
   margin-top: -210px;
   &:after {
     clear: both;
@@ -19,15 +22,46 @@
       position: relative;
       padding-left: 30px;
       font-family: "GloberM", Helvetica, sans-serif;
+      margin-top: 10px;
       &:after {
-        content: '';
+        content: "";
         height: 22px;
         width: 22px;
-        background: url('../img/info_outline.svg');
+        background: url("../img/info_outline.svg");
         position: absolute;
         left: 0;
         top: -4px;
       }
+    }
+  }
+
+  &__banner {
+    width: 658px;
+    height: 121px;
+    background: #ffffff;
+    box-shadow: 0px 30px 90px rgba(29, 43, 57, 0.102);
+    border-radius: 4px;
+    position: relative;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+    padding: 40px 50px 40px 150px;
+
+    &::before {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      line-height: 145px;
+      text-align: center;
+      font-size: 70px;
+      font-family: "GloberM xBold", Helvetica, sans-serif;
+      content: "!";
+      color: #fff;
+      background: #eb001c;
+      height: 121px;
+      width: 121px;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 }
