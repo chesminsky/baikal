@@ -1,14 +1,73 @@
 <%- partial("_partials/_header", { main: false }) %>
 
-<form class="form">
-    <h1 class="form__header">
-        Заявка на эко-проект
-        <div class="form__header-info">
-            Все поля обязательны для заполнения
-        </div>
-    </h1>
+    <form class="form">
+        <h1 class="form__header">
+            Заявка на эко-проект
+            <div class="form__header-info">
+                Все поля обязательны для заполнения
+            </div>
+        </h1>
 
-    <div class="form__banner">
-        В вашей команде пока недостаточно людей для отправки заявки. Пригласите ещё <b>двоих</b> людей.
-    </div>
-</form>
+        <div class="form__banner">
+            В вашей команде пока недостаточно людей для отправки заявки. Пригласите ещё <b>двоих</b> людей.
+        </div>
+
+        <div class="form__group mb-70">
+            <label class="input">
+                <input type="text" class="input__text">
+                <span class="input__caption">
+                    Название проекта
+                </span>
+            </label>
+        </div>
+
+
+        <section>
+            <h2>
+                Информация о капитане
+            </h2>
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            ФИО капитана проекта
+                        </span>
+                    </label>
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            Номер соглашения капитана
+                        </span>
+                    </label>
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            Название проекта
+                        </span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            Мобильный телефон*
+                        </span>
+                    </label>
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            E-mail капитана
+                        </span>
+                    </label>
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            Адрес страницы в социальной сети
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+    </form>
