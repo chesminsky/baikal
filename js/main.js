@@ -48,8 +48,10 @@ $(document).ready(function () {
         $(this).toggleClass('is-opened');
     });
     $('.input--select__item').on('click', function(e) {
-        $(this).parent().siblings('.input--select__value').html($(this).html());
-        $(this).parent().siblings('input[type="hidden"]').val($(this).html().trim());
+        var viewValue = $(this).html().trim();
+        var value = $(this).attr('code') || viewValue;
+        $(this).parent().siblings('.input--select__value').html(viewValue);
+        $(this).parent().siblings('input[type="hidden"]').val(value);
     });
 
     // menu 

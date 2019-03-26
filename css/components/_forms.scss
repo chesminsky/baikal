@@ -143,7 +143,7 @@
     position: absolute;
     right: 20px;
     top: 50%;
-    margin-top: -4px;
+    margin-top: -2px;
   }
 
   .input__caption {
@@ -157,6 +157,7 @@
     left: 0;
     right: 0;
     background: #f0f2f3;
+    z-index: 1;
   }
   
   &__item {
@@ -167,11 +168,42 @@
   }
 
   &.is-opened {
+    .input--select__value {
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    }
     .input--select__dropdown {
       display: block;
     }
     &:after {
       transform: rotate(180deg);
+    }
+  }
+}
+
+// country select
+.country-phone {
+  display: flex;
+
+  .input--select .input--select__value {
+    padding: 13px 16px 23px;
+    text-align: center;
+    // border-top-right-radius: 0;
+    // border-bottom-right-radius: 0;
+  }
+
+  // .input .input__text {
+  //   border-top-left-radius: 0;
+  //   border-bottom-left-radius: 0;
+  // }
+
+  .input--select {
+    width: 57px;
+    margin-right: 2px;
+
+    &:after {
+      right: 21px;
+      top: 50%;
+      margin-top: 11px;
     }
   }
 }
