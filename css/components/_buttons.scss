@@ -50,4 +50,14 @@
       box-shadow: 0px 12px 20px rgba(180, 120, 255, 0.6);
     }
   }
+
+  &--flat {
+    background: #fff;
+    border: 1px solid #31A6EA;
+    color: #31A6EA;
+    box-shadow: 0px 12px 20px rgba(117, 129, 145, 0.2);
+    &:hover {
+      box-shadow: 0px 12px 20px rgba(117, 129, 145, 0.4);
+    }
+  }
 }
