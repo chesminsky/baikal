@@ -1,7 +1,4 @@
 .form {
-  height: 5000px;
-  // border: 1px solid black;
-
   max-width: 920px;
   margin: 0 auto;
   position: relative;
@@ -202,5 +199,33 @@
       margin: 0 auto 23px;
       max-width: 457px;
     }
+  }
+
+  &__bottom-hint {
+    font-size: 22px;
+    line-height: 37px;
+    text-align: center;
+    color: #ffffff;
+    margin: 46px auto 0;
+    width: 560px;
+  }
+}
+
+.footer--form {
+  height: 894px;
+  margin: -630px auto 0;
+  background-image: url("../img/footer-form.png");
+  background-position: center center;
+  background-size: 1440px 894px;
+  background-repeat: no-repeat;
+  padding-top: 630px;
+
+  h3 {
+    color: #fff;
+  }
+
+  .footer__link {
+    color: #fff;
+    border-color: #fff;
   }
 }
