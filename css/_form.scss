@@ -3,11 +3,30 @@
   margin: 0 auto;
   position: relative;
   margin-top: -320px;
-  min-height: 20000px;
   padding: 0 20px;
   @media (min-width: 1024px) {
     padding: 0;
     margin-top: -210px;
+  }
+
+  .btn {
+    white-space: nowrap;
+    padding: 17px;
+    font-size: 17px;
+    width: 100%;
+  }
+  .custom-input-file {
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    .custom-input-file {
+      width: auto;
+    }
+    .btn {
+      padding: 17px 46px;
+      font-size: 19px;
+      width: auto;
+    }
   }
   &:after {
     clear: both;
@@ -150,6 +169,12 @@
     max-width: 825px;
     margin-bottom: 15px;
 
+    flex-direction: column;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+
     .input__text {
       height: auto;
       box-shadow: none;
@@ -162,21 +187,27 @@
     }
 
     &--4cols {
-      .form__table-box:nth-child(2) {
-        width: 20%;
-      }
-      .form__table-box:nth-child(3) {
-        width: 26%;
-      }
-      .form__table-box:nth-child(4) {
-        width: 20%;
+      @media (min-width: 1024px) {
+        .form__table-box:nth-child(2) {
+          width: 20%;
+        }
+        .form__table-box:nth-child(3) {
+          width: 26%;
+        }
+        .form__table-box:nth-child(4) {
+          width: 20%;
+        }
       }
     }
   }
 
   &__table-box {
-    width: 33%;
-    margin-right: 0.5%;
+    width: 100%;
+    @media (min-width: 1024px) {
+      width: 33%;
+      margin: 0 0.5% 0 0;
+    }
+    margin: 0 0 0.5% 0;
     background: #f0f2f3;
     border-radius: 4px;
     &:last-child {
@@ -222,7 +253,10 @@
     background: #ffffff;
     box-shadow: 0px 30px 90px rgba(29, 43, 57, 0.102);
     border-radius: 10px;
-    padding: 55px;
+    padding: 20px;
+    @media (min-width: 1024px) {
+      padding: 55px;
+    }
     text-align: center;
     h2 {
       margin-bottom: 35px;
@@ -244,7 +278,9 @@
     text-align: center;
     color: #ffffff;
     margin: 46px auto 0;
-    width: 560px;
+    @media (min-width: 1024px) {
+      width: 560px;
+    }
   }
 }
 
