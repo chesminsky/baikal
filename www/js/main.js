@@ -40,6 +40,23 @@ $(document).ready(function () {
         }
     });
 
+    // select
+    $('.input--select').on('click', function(e) {
+        if ($(this).find('input').is(':disabled')) {
+            return;
+        }
+        $(this).toggleClass('is-opened');
+    });
+    $('.input--select__item').on('click', function(e) {
+        var viewValue = $(this).html().trim();
+        var value = $(this).attr('code') || viewValue;
+        $(this).parent().siblings('.input--select__value').html(viewValue);
+        $(this).parent().siblings('input[type="hidden"]').val(value);
+    });
+
+    // autoresized text areas
+    autosize($('.form__table-box textarea'));
+
     // menu 
     $('#js-open-menu').click(function() {
         $('body').addClass('is-menu-opened');

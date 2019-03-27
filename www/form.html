@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Охотники за травами</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header header--form">
+    <div class="container">
+ 
+        <div class="header__top">
+            <ul class="header__left">
+                <li>
+                    <img src="img/logo_sm_1.png" alt="">
+                </li>
+                <li>
+                    <img src="img/logo_sm_2.png" alt="">
+                </li>
+                <li class="header__mobile-controls">
+                    <div class="burger" id="js-open-menu"></div>
+                    <div class="icon-close" id="js-close-menu"></div>
+                </li>
+                <li class="header__lang">
+                    <a href="#" class="lang-link is-active">
+                        <img src="img/ru.png" alt="">
+                        <span>RU</span>
+                    </a>
+                    <a href="#" class="lang-link">
+                        <img src="img/en.png" alt="">
+                        <span>EN</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header__right">
+                <li class="header__menu-item">
+                    <a href="#">
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#">
+                        <span>Войти</span>
+                    </a>
+                </li>
+
+                <li class="header__dropdown dropdown">
+                    <div class="dropdown__user">
+                        <img class="dropdown__av" src="img/av.png" alt="">
+                        <div class="dropdown__username" id="js-toggle-menu">
+                            Константин Константинопольский
+                        </div>
+                    </div>
+                    <div class="dropdown__links">
+                        <div class="dropdown__caption">
+                            Ссылка скопирована
+                        </div>
+                        <ul>
+                            <li class="dropdown__link dropdown__link--copy">
+                                Скопировать
+                                реферальную ссылку
+                            </li>
+                            <li class="dropdown__link dropdown__link--exit">
+                                Выйти
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown__team">
+                        <div class="dropdown__caption">
+                            В команде так же состоят:
+                        </div>
+                        <ul>
+                            <li class="dropdown__team-member">
+                                <img class="dropdown__av" src="img/av.png" alt="">
+                                <div class="dropdown__username">
+                                    Евгения Орлова
+                                </div>
+                            </li>
+                            <li class="dropdown__team-member">
+                                <img class="dropdown__av" src="img/av.png" alt="">
+                                <div class="dropdown__username">
+                                    Евгения Лололова
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="dropdown__caption bold black">
+                            Осталось 3 места
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</header>
+
+    <form class="form">
+        <h1 class="form__header">
+            Заявка на эко-проект
+            <div class="form__header-info">
+                Все поля обязательны для заполнения
+            </div>
+        </h1>
+
+        <div class="form__banner">
+            В вашей команде пока недостаточно людей для отправки заявки. Пригласите ещё <b>двоих</b> людей.
+        </div>
+
+        <div class="form__group mb-70">
+            <label class="input">
+                <input type="text" class="input__text">
+                <span class="input__caption">
+                    Название проекта
+                </span>
+            </label>
+        </div>
+
+        <section class="form__section">
+            <h2>
+                Информация о капитане
+            </h2>
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            ФИО капитана проекта
+                        </span>
+                    </label>
+                    <label class="input">
+                        <input type="text" class="input__text" value="31234123">
+                        <span class="input__caption">
+                            Номер соглашения капитана
+                        </span>
+                    </label>
+                    <label class="input input--select">
+                        <input type="hidden" value="Diamond Business Leader">
+                        <span class="input--select__value">Diamond Business Leader</span>
+                        <span class="input__caption">
+                            Ранг капитана
+                        </span>
+                        <ul class="input--select__dropdown">
+                            <li class="input--select__item">
+                                Diamond Business Leader
+                            </li>
+                            <li class="input--select__item">
+                                Fake Business Leader
+                            </li>
+                        </ul>
+                    </label>
+                    <div class="form__hint tar">
+                        <span class="red">Обязательное условие: </span>капитан команды должен <br>быть в статусе Business
+                        Leader или выше.
+                    </div>
+                </div>
+                <div class="form__group">
+                    <div class="country-phone">
+                        <label class="input input--select">
+                            <input type="hidden" value="Diamond Business Leader">
+                            <span class="input--select__value">
+                                <img src="img/ru_sm.png" alt="">
+                            </span>
+                            <ul class="input--select__dropdown">
+                                <li class="input--select__item" code="RU">
+                                    <img src="img/ru_sm.png" alt="">
+                                </li>
+                                <li class="input--select__item" code="EN">
+                                    <img src="img/ru_sm.png" alt="">
+                                </li>
+                            </ul>
+                        </label>
+                        <label class="input">
+                            <input type="text" class="input__text" value="+7 (">
+                            <span class="input__caption">
+                                Мобильный телефон
+                            </span>
+                        </label>
+                    </div>
+                    <label class="input">
+                        <input type="text" class="input__text" value="some@mail.com">
+                        <span class="input__caption">
+                            E-mail капитана
+                        </span>
+                    </label>
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            Адрес страницы в социальной сети
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="form__section">
+            <h2>
+                Остальные участники проекта
+            </h2>
+            <div class="form__full">
+                <label class="input">
+                    <input type="text" class="input__text" value="Евгения Орлова, Сергей Васильев, Людмила Степанова, Кирилл Алфёров">
+                    <span class="input__caption">
+                        ФИО
+                    </span>
+                </label>
+            </div>
+        </section>
+ 
+        <section class="form__section">
+            <h2>
+                О проекте
+            </h2>
+            <div class="form__group">
+                <label class="input">
+                    <input type="text" class="input__text">
+                    <span class="input__caption">
+                        Территория реализации проекта
+                    </span>
+                </label>
+                <label class="input">
+                    <input type="text" class="input__text">
+                    <span class="input__caption">
+                        Полная стоимость проекта, ₽
+                    </span>
+                </label>
+            </div>
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            Дата начала реализации проекта
+                        </span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            Дата окончания реализации проекта
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <textarea class="input__text"></textarea>
+                        <span class="input__caption">
+                            Описание проекта
+                        </span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <div class="form__hint form__hint--padded">
+                        Опишите суть, участников и предполагаемый результат проекта.
+                    </div>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <textarea class="input__text"></textarea>
+                        <span class="input__caption">
+                            Актуальность проекта
+                        </span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <div class="form__hint form__hint--padded">
+                        Проблема, на решение которой направлен проект – разница между тем, как должно быть, и тем, как есть сейчас.
+                    </div>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <textarea class="input__text"></textarea>
+                        <span class="input__caption">
+                            Цель и задачи проекта
+                        </span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <div class="form__hint form__hint--padded">
+                        <p>
+                            Цель – для чего реализуется проект (социальная миссия)
+                        </p>
+                        <p>
+                            Задачи – конкретные и измеримые шаги по достижению цели
+                        </p>
+                        <p>
+                            Какие экологические задачи решает. Имеет ли историю, научные наработки
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <textarea class="input__text"></textarea>
+                        <span class="input__caption">
+                            Целевая аудитория проекта
+                        </span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <div class="form__hint form__hint--padded">
+                        На кого направлен проект? Почему выбрана данная целевая аудитория?
+                    </div>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <textarea class="input__text"></textarea>
+                        <span class="input__caption">
+                            Привлеченные эксперты
+                        </span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <div class="form__hint form__hint--padded">
+                        Какие эксперты привлечены. Иъ экспертный опыт, научная или общественная деятельность, общественное признание.
+                    </div>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <textarea class="input__text"></textarea>
+                        <span class="input__caption">
+                            Ожидаемые результаты проекта
+                        </span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <div class="form__hint form__hint--padded">
+                        Количественные показатели: например, планируемое количество участников, проведенных мероприятий и акций, собранной помощи
+                        (книги, одежда, корм для животных) и т.д.
+                    </div>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <textarea class="input__text"></textarea>
+                        <span class="input__caption">
+                            Масштабируемость и дублицируемость проекта в других регионах и странах
+                        </span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <div class="form__hint form__hint--padded">
+                        Каким образом предполагается сохранить и расширить достижения данного проекта (после окончания)
+                    </div>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <textarea class="input__text"></textarea>
+                        <span class="input__caption">
+                            Потенциал освещения в СМИ
+                        </span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <div class="form__hint form__hint--padded">
+                        Как будет происходить информирование целевой аудитории и общественности о реализации проекта (например, анонсирование проекта,
+                        публикации в СМИ, приглашение СМИ на мероприятия, размещение информации в социальных сетях) В чем
+                        привлекательность данного проекта для изданий, телеканалов, блогеров и широкой общественности.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form__section">
+            <h2>
+                О проекте
+            </h2>
+            <div class="form__table">
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="1">Уборка прилежащей территории при участии волонтёров</textarea>
+                        <span class="input__caption">
+                            Мероприятие
+                        </span>
+                    </label>
+                </div>
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="1">Планируется 50-70 человек, освещение местными СМИ, инвентарь для уборки выдаст коммунальная служба, продлится примерно 3 часа</textarea>
+                        <span class="input__caption">
+                            Место проведения
+                        </span>
+                    </label>
+                </div>
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="1">12:00 - 15:00, 27 июня</textarea>
+                        <span class="input__caption">
+                            Целевая аудитория
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="form__table">
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="1"></textarea>
+                        <span class="input__caption">
+                            Мероприятие
+                        </span>
+                    </label>
+                </div>
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="1"></textarea>
+                        <span class="input__caption">
+                            Место проведения
+                        </span>
+                    </label>
+                </div>
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="1"></textarea>
+                        <span class="input__caption">
+                            Целевая аудитория
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="button" class="form__add-table-row">
+                Добавить ещё 1 мероприятие
+            </button>
+        </section>
+
+        <section class="form__section">
+            <h2>
+                Ключевые мероприятия проекта (самые яркие, особо значимые события проекта, от 1 до 5 мероприятий)
+            </h2>
+            <div class="form__table">
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="1"></textarea>
+                        <span class="input__caption">
+                            Мероприятие
+                        </span>
+                    </label>
+                </div>
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="1"></textarea>
+                        <span class="input__caption">
+                            Место проведения
+                        </span>
+                    </label>
+                </div>
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="1"></textarea>
+                        <span class="input__caption">
+                            Целевая аудитория
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="button" class="form__add-table-row">
+                Добавить ещё 1 мероприятие
+            </button>
+        </section>
+
+        <section class="form__section">
+            <h2>
+                Смета проекта
+            </h2>
+            <div class="form__table form__table--4cols">
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="2"></textarea>
+                        <span class="input__caption">
+                            Статья расходов
+                        </span>
+                    </label>
+                </div>
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="2"></textarea>
+                        <span class="input__caption">
+                            Запрашиваемая сумма, ₽
+                        </span>
+                    </label>
+                </div>
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="2"></textarea>
+                        <span class="input__caption">
+                            Собственный вклад и вклад партнеров, ₽
+                        </span>
+                    </label>
+                </div>
+                <div class="form__table-box">
+                    <label class="input">
+                        <textarea class="input__text" rows="2"></textarea>
+                        <span class="input__caption">
+                            Всего ₽
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="button" class="form__add-table-row">
+                Добавить ещё 1 мероприятие
+            </button>
+        </section>
+
+        <section class="form__section">
+            <h2>
+                Техническая документация, чертежи, дизайн-проект (при необходимости)
+            </h2>
+            <div>
+                <label class="custom-input-file">
+                    <div class="btn btn--flat">прикрепить файл</div>
+                    <input type="file">
+                </label>
+            </div>
+        </section>
+
+        <section class="form__section">
+            <div class="form__bottom-banner">
+                <h2>
+                    Сохраните черновик заявки
+                </h2>
+                <p>
+                    Вы можете сохранять текущее состояние заявки и продолжать заполнять позже, с любого устройства. Главное – отправьте до 30
+                    апреля :)
+                </p>
+                <div>
+                    <button type="button" class="btn btn--flat">
+                        Сохранить черновик
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="form__section tac">
+            <button type="submit" class="btn btn--green">
+                Отправить заявку
+            </button>
+
+            <p class="form__bottom-hint">
+                Все участники команды получат уведомления на почту об этом долгожданном событии!
+            </p>
+        </section>
+    </form>
+
+    <footer class="footer footer--form">
+        <div class="container">
+            <h3>
+                Следите за новостями
+            </h3>
+            <ul class="social">
+                <li>
+                    <a href="#">
+                        <img src="img/vk.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/fb.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/inst.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="footer__link link">Написать службе поддержки конкурса</a>
+        </div>
+    </footer>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="js/autosize.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
