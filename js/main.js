@@ -54,6 +54,9 @@ $(document).ready(function () {
         $(this).parent().siblings('input[type="hidden"]').val(value);
     });
 
+    // autoresized text areas
+    autosize($('.form__table-box textarea'));
+
     // menu 
     $('#js-open-menu').click(function() {
         $('body').addClass('is-menu-opened');
