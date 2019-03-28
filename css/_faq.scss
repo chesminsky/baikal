@@ -1,0 +1,61 @@
+.faq {
+  @extend .form__full;
+
+  &__item {
+    padding: 20px;
+    @media (min-width: 1024px) {
+        padding: 29px 26px;
+    }
+    background: #ffffff;
+    border-bottom: 1px solid #d8e7ef;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      background: #f9fafb;
+    }
+    &:first-child {
+      border-top: 1px solid #d8e7ef;
+    }
+
+    &.is-active {
+      background: #f9fafb;
+      .faq__item-descr {
+        display: block;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 44px;
+      right: 10px;
+      @media (min-width: 1024px) {
+        right: 30px;
+      }
+      width: 14px;
+      height: 10px;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEGSURBVHgBlVDLbcJQENx1HEW5cUiEcqMEYhoIHcTHOIeQCnAHIRVAB4CEbW64AzoAl+Ab8DjABQmB9Ia3BiHxFyM9ad/sjHZniQxKgaoWe7Mc3YBoSl1Vldp2OmNfM9V5uf40//I1o9H0NOjDCcds6QfEREhJiO60fsnkhKZnNKLVjNhKvt5SgF1DzqHhO9H078RkOBD8TMO6LB7e7x+pCoOaUoOsSuK9tLP8ofrRRK0tDzfx8nG29kH4YFJjZpk4h23yrkXAfWLkAPwn3/naPu/JWoFqgEkul+6owrHprFHwHqn+9hDZxHjgvbrHGvucEctHl59WQ6n18+KX7kExGhXkXepvAN6qcpyvJt/VAAAAAElFTkSuQmCC);
+    }
+
+    &-title {
+      font-size: 18px;
+      @media (min-width: 1024px) {
+        font-size: 22px;
+        line-height: 37px;
+      }
+      color: #000000;
+    }
+
+    &-descr {
+      display: none;
+      padding: 10px 0;
+      @media (min-width: 1024px) {
+        padding: 14px 34px 4px;
+        font-size: 17px;
+        line-height: 24px;
+      }
+      color: #000000;
+    }
+  }
+}

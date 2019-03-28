@@ -67,4 +67,9 @@ $(document).ready(function () {
     $('#js-toggle-menu').click(function() {
         $('body').toggleClass('is-menu-opened');
     });
+
+    //faq
+    $('.faq__item').click(function() {
+        $(this).toggleClass('is-active');
+    });
 });
