@@ -71,14 +71,14 @@
       }
       &:before {
         border-radius: 50%;
-        content: '';
+        content: "";
         position: absolute;
         top: 3px;
         left: 3px;
         display: block;
         width: 28px;
         height: 28px;
-        background-color: #4FDA76;
+        background-color: #4fda76;
         background-repeat: no-repeat;
         background-position: center;
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACJSURBVHgBlZEBDcAgDASbKZiESkACEiYFB8zBJCBhEiYFCUjoIGuypsnW8gkhFI7vA8CEiCjMnB/ARo/S4gSwTwcvm4cZ0MUuxQtkBho7mkCkV0lvniOoqmEflYGqgSDsg6gX4YLwE7TxJVkA+1fvq2ilCaCCERoVMBTBknot358wmLhVhBlZwA1umdiq5zOB0AAAAABJRU5ErkJggg==);
@@ -306,6 +306,19 @@
       color: #000000;
       margin: 0 auto 23px;
       max-width: 457px;
+    }
+  }
+
+  &__sent-block {
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 250px;
+    h2 {
+      color: #fff;
+      font-size: 22px;
+      line-height: 37px;
+      font-family: "GloberM", Helvetica, sans-serif;
+      font-weight: normal;
     }
   }
 

@@ -17,6 +17,29 @@
     border-bottom: none;
   }
 }
+
+.file-link {
+  font-size: 17px;
+  line-height: 24px;
+  color: #333333;
+  position: relative;
+  padding-left: 30px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 15px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEkSURBVHgBpZLdacMwEMcrWQY/OiNkgiQjdAN3g3SCYvDHY9VnG0QnKJkgzgTuBm0maLOBCrYx+Kv/Mw30KZHIwdm6j9/pJB27MxSllN+2re95ng7DUJ/9zATs+/6ZMRb8uXxo4TjOCwp9cwO4xHJRVdUmiqIldDFN0wn+/cUO/sFHIYTsuk6hC38cx9c0TYssy0rO+Y6ZwMMwlAAPKFDAt4dvifgW9kqYwNAddpUUz/NcI76mNYr+cEv4DefXiH1i9yfqSFjCa+Q8wCyxPiRJ8s5sYcTp9o9xHG/nV7gFJuFIVmcnPZUNTCKQECBhQ0bTNI9SSm0Kzx3Qh+ab/rbwfAeYKInkleu6IWxNRzKF5w4QlBjJE8AP6BcNR13X94CDazDJL0o8PpHX0xwCAAAAAElFTkSuQmCC);
+  }
+}
+
 .pdf {
   font-size: 14px;
   line-height: 22px;
@@ -115,6 +138,7 @@
   color: #000000 !important;
 }
 
-.error, .red {
-  color: #EB001C !important;
+.error,
+.red {
+  color: #eb001c !important;
 }
