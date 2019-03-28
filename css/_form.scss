@@ -37,6 +37,7 @@
   &__header {
     font-size: 49px;
     color: #ffffff;
+    min-height: 85px;
 
     &-info {
       font-size: 17px;
@@ -364,6 +365,16 @@
     font-style: normal;
     font-size: 18px;
     line-height: 31px;
+  }
+
+  &__social-hint {
+    display: flex;
+    justify-content: start;
+    height: 70px;
+    align-items: center;
+    li {
+      margin-right: 15px;
+    }
   }
 }
 

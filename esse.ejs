@@ -1,0 +1,152 @@
+<%- partial("_partials/_header", { main: false }) %>
+
+    <form class="form">
+        <h1 class="form__header">
+            Заявка на эссе
+        </h1>
+
+        <div class="form__group mb-70">
+            <label class="input">
+                <input type="text" class="input__text">
+                <span class="input__caption">
+                    Название эссе
+                </span>
+            </label>
+        </div>
+
+        <section class="form__section">
+            <h2>
+                Информация об авторе
+            </h2>
+            <div class="form__row">
+                <div class="form__group">
+                    <div class="country-phone">
+                        <label class="input input--select">
+                            <input type="hidden" value="RU">
+                            <span class="input--select__value">
+                                <img src="img/ru_sm.png" alt="">
+                            </span>
+                            <ul class="input--select__dropdown">
+                                <li class="input--select__item" code="RU">
+                                    <img src="img/ru_sm.png" alt="">
+                                </li>
+                                <li class="input--select__item" code="EN">
+                                    <img src="img/ru_sm.png" alt="">
+                                </li>
+                            </ul>
+                        </label>
+                        <label class="input">
+                            <input type="text" class="input__text" value="+7 (">
+                            <span class="input__caption">
+                                Мобильный телефон
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            E-mail
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            Место работы
+                        </span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            Должность
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form__row">
+                <div class="form__group">
+                    <label class="input">
+                        <input type="text" class="input__text">
+                        <span class="input__caption">
+                            Адрес страницы в социальной сети
+                        </span>
+                    </label>
+                </div>
+                <div class="form__group">
+                    <ul class="form__social-hint">
+                        <li>
+                            <img src="img/vk_gray.png" alt="">
+                        </li>
+                        <li>
+                            <img src="img/fb_gray.png" alt="">
+                        </li>
+                        <li>
+                            <img src="img/inst_gray.png" alt="">
+                        </li>
+                        <li>
+                            <img src="img/ok_gray.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="form__section">
+            <h2>
+                Эссе
+            </h2>
+            <div class="form__row">
+                <label class="input">
+                    <textarea class="input__text" style="height: 485px"></textarea>
+                    <span class="input__caption">
+                        1500 знаков, русский или английский язык
+                    </span>
+                </label>
+            </div>
+        </section>
+
+        <section class="form__submit">
+            <button type="submit" class="btn btn--green">
+                Отправить эссе
+            </button>
+
+            <p class="form__bottom-hint">
+                Все участники команды получат уведомления на почту об этом долгожданном событии!
+            </p>
+        </section>
+    </form>
+
+    <footer class="footer footer--form">
+        <div class="container">
+            <h3>
+                Следите за новостями
+            </h3>
+            <ul class="social">
+                <li>
+                    <a href="#">
+                        <img src="img/vk.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/fb.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/inst.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="footer__link link">Написать службе поддержки конкурса</a>
+        </div>
+    </footer>
