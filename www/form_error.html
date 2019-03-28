@@ -107,10 +107,6 @@
             </div>
         </h1>
 
-        <div class="form__banner">
-            В вашей команде пока недостаточно людей для отправки заявки. Пригласите ещё <b>двоих</b> людей.
-        </div>
-
         <div class="form__group mb-70">
             <label class="input">
                 <input type="text" class="input__text">
@@ -127,7 +123,7 @@
             <div class="form__row">
                 <div class="form__group">
                     <label class="input">
-                        <input type="text" class="input__text">
+                        <input type="text" class="input__text is-error">
                         <span class="input__caption">
                             ФИО капитана проекта
                         </span>
@@ -280,7 +276,7 @@
             <div class="form__row">
                 <div class="form__group">
                     <label class="input">
-                        <textarea class="input__text"></textarea>
+                        <textarea class="input__text is-error"></textarea>
                         <span class="input__caption">
                             Цель и задачи проекта
                         </span>
@@ -544,14 +540,24 @@
                     апреля :)
                 </p>
                 <div>
-                    <button type="button" class="btn btn--flat">
-                        Сохранить черновик
+                    <button type="button" class="btn btn--flat btn--flat-muted">
+                        Черновик сохранён
                     </button>
                 </div>
             </div>
         </section>
 
         <section class="form__submit">
+
+            <div class="form__errors">
+                <div class="mb-10">
+                    <i class="form__error-icon">!</i>
+                </div>
+                <p>
+                    Текст ошибки, например: Все поля обязательны для заполнения
+                </p>
+            </div>
+
             <button type="submit" class="btn btn--green">
                 Отправить заявку
             </button>
