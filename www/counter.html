@@ -11,9 +11,9 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container container--wide">
-
+  <header class="header header--form">
+    <div class="container">
+ 
         <div class="header__top">
             <ul class="header__left">
                 <li>
@@ -96,76 +96,67 @@
             </ul>
         </div>
         
-        <div class="logo"></div>
-        <div class="header__layer">
-            <p>
-                Напиши лучшее эссе или спланируй лучший эко-проект и получи тур на Байкал!
-            </p>
-            <button class="btn btn--gradient">
-                участвовать
-            </button>
-        </div>
-        
     </div>
 </header>
 
-    <!-- popup -->
-    <div class="overlay">
-        <div class="popup">
-            <i class="popup__close"></i>
-            <div class="popup__row">
-                <div class="popup__column popup__column--left">
-                    <div class="popup__caption">
-                        Пишу эссе
-                    </div>
-                    <ul class="social">
-                        <li>
-                            <a href="#">
-                                <img src="img/vk.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/fb.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/inst.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/google.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
+    <div class="form">
+        <h1 class="form__header">
+            Заявка на эко-проект
+        </h1>
+
+        <div class="container">
+            <div class="counter-banner">
+                Приём заявок начнётся 8 апреля в 12:00
+                <div class="counter-banner__caption">
+                    по московскому времени
                 </div>
-                <div class="popup__column popup__column--right">
-                    <div class="popup__caption">
-                        Состою в команде
-                    </div>
-                    <form>
-                        <label class="input">
-                            <input type="text" class="input__text">
-                            <span class="input__caption">
-                                Номер договора
-                            </span>
-                        </label>
-                        <label class="input">
-                            <input type="password" class="input__text">
-                            <span class="input__caption">
-                                Пароль
-                            </span>
-                        </label>
-                        <button type="submit" class="btn btn--green">
-                            войти
-                        </button>
-                    </form>
+            </div>
+            <div class="counter">
+                <div class="counter__item">
+                    <div class="counter__value" id="days"></div>
+                    <div class="counter__caption">Дней</div>
+                </div>
+                <div class="counter__item">
+                    <div class="counter__value" id="hours"></div>
+                    <div class="counter__caption">Часов</div>
+                </div>
+                <div class="counter__item">
+                    <div class="counter__value" id="minutes"></div>
+                    <div class="counter__caption">Минут</div>
+                </div>
+                <div class="counter__item">
+                    <div class="counter__value" id="seconds"></div>
+                    <div class="counter__caption">Секунд</div>
                 </div>
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>
+                Следите за новостями
+            </h3>
+            <ul class="social">
+                <li>
+                    <a href="#">
+                        <img src="img/vk.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/fb.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/inst.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="footer__link link">Написать службе поддержки конкурса</a>
+        </div>
+    </footer>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
