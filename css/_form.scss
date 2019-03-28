@@ -332,6 +332,39 @@
       width: 560px;
     }
   }
+
+  &__submit {
+    min-height: 350px;
+    text-align: center;
+  }
+
+  &__errors {
+    text-align: center;
+    margin-bottom: 20px;
+    p {
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      font-weight: 600;
+      color: #FFFFFF;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+  }
+
+  &__error-icon {
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    background: #EB001C;
+    border-radius: 50%;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 31px;
+  }
 }
 
 .footer--form {

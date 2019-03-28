@@ -60,4 +60,10 @@
       box-shadow: 0px 12px 20px rgba(117, 129, 145, 0.4);
     }
   }
+
+  &--flat-muted {
+    color: #C4C4C4;
+    border-color: #C4C4C4;
+    box-shadow: none !important;
+  }
 }
