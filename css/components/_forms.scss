@@ -33,7 +33,7 @@
     border: none;
     outline: none;
     transition: all 0.1s ease-out 0s;
-    padding: 31px 17px 10px;
+    padding: 31px 17px 10px 15px;
     font-size: 17px;
     color: #333333;
     border: 2px solid transparent;
@@ -52,7 +52,7 @@
 
     &[disabled] {
       border: 2px solid #efefef;
-      background: transparent;
+      background: #fff;
     }
   }
 }

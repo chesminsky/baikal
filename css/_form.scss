@@ -205,12 +205,19 @@
       flex-direction: row;
     }
 
+    &.is-disabled {
+      .form__table-box {
+        border: 2px solid #efefef;
+        background: #fff;
+      }
+    }
+
     .input__text {
       height: auto;
       box-shadow: none;
       display: block;
       background: transparent;
-      border-color: none !important;
+      border-color: transparent !important;
       ::-webkit-scrollbar {
         display: none;
       }
