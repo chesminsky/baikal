@@ -22,6 +22,10 @@
       .faq__item-descr {
         display: block;
       }
+
+      &:after {
+        transform: rotate(180deg);
+      }
     }
 
     &:after {

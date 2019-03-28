@@ -1,0 +1,49 @@
+.counter {
+  background: #ffffff;
+  box-shadow: 0px 30px 90px rgba(29, 43, 57, 0.102);
+  border-radius: 10px;
+  display: flex;
+  justify-content: stretch;
+  margin-bottom: 50px;
+  &__item {
+    width: 25%;
+    text-align: center;
+    padding: 20px 0;
+    @media (min-width: 1024px) {
+        padding: 59px 0;
+    }
+    &:not(:last-child) {
+      border-right: 1px solid #d8e7ef;
+    }
+  }
+  &__value {
+    font-size: 40px;
+    @media (min-width: 1024px) {
+      font-size: 140px;
+    }
+    color: #d9dae0;
+  }
+  &__caption {
+
+    text-align: center;
+
+    color: #333333;
+    line-height: 22px;
+    font-size: 14px;
+  }
+
+  &-banner {
+    font-size: 22px;
+    line-height: 37px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 75px;
+    color: #000000;
+    &__caption {
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #758191;
+    }
+  }
+}
