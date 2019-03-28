@@ -68,8 +68,32 @@ $(document).ready(function () {
         $('body').toggleClass('is-menu-opened');
     });
 
-    //faq
+    // faq
     $('.faq__item').click(function() {
         $(this).toggleClass('is-active');
     });
+
+    // countdown
+    var date = '08.04 12:00';
+    var eventTime =  moment(date, 'DD.MM HH:mm').valueOf(); 
+    var currentTime = moment().valueOf(); 
+    var diffTime = eventTime - currentTime;
+    var duration = moment.duration(diffTime, 'milliseconds');
+    var interval = 1000;
+    var counterElement = $('.counter');
+
+    if (counterElement) {
+        function render(){
+            counterElement.find('#days').text(duration.days());
+            counterElement.find('#hours').text(duration.hours());
+            counterElement.find('#minutes').text(duration.minutes());
+            counterElement.find('#seconds').text(duration.seconds());
+        }
+        render();
+        setInterval(function() {
+            duration = moment.duration(duration - interval, 'milliseconds');
+            render();
+        }, interval);
+    }
+
 });
