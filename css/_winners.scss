@@ -45,12 +45,20 @@
     text-overflow: ellipsis;
     overflow: hidden;
     img {
+      display: none;
+      @media (min-width: 500px) {
+        display: inline-block;
+      }
       margin-right: 13px;
     }
   }
 
   &__list {
-    width: 20%;
+    display: none;
+    @media (min-width: 900px) {
+      width: 20%;
+      display: table-cell;
+    }
     li {
       display: inline-block;
       width: 30px;
@@ -68,6 +76,10 @@
   }
 
   &__check {
+    display: none;
+    @media (min-width: 500px) {
+      display: table-cell;
+    }
     border-bottom: none !important;
     width: 10%;
     text-align: center;
