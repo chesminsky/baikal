@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Охотники за травами</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container container--wide">
+
+        <div class="header__top">
+            <ul class="header__left">
+                <li>
+                    <img src="img/logo_sm_1.png" alt="">
+                </li>
+                <li>
+                    <img src="img/logo_sm_2.png" alt="">
+                </li>
+                <li class="header__mobile-controls">
+                    <div class="burger" id="js-open-menu"></div>
+                    <div class="icon-close" id="js-close-menu"></div>
+                </li>
+                <li class="header__lang">
+                    <a href="#" class="lang-link is-active">
+                        <img src="img/ru.png" alt="">
+                        <span>RU</span>
+                    </a>
+                    <a href="#" class="lang-link">
+                        <img src="img/en.png" alt="">
+                        <span>EN</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header__right">
+                <li class="header__menu-item">
+                    <a href="#">
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#">
+                        <span>Войти</span>
+                    </a>
+                </li>
+
+                <li class="header__dropdown dropdown">
+                    <div class="dropdown__user">
+                        <img class="dropdown__av" src="img/av.png" alt="">
+                        <div class="dropdown__username" id="js-toggle-menu">
+                            Константин Константинопольский
+                        </div>
+                    </div>
+                    <div class="dropdown__links">
+                        <div class="dropdown__caption">
+                            Ссылка скопирована
+                        </div>
+                        <ul>
+                            <li class="dropdown__link dropdown__link--copy">
+                                Скопировать
+                                реферальную ссылку
+                            </li>
+                            <li class="dropdown__link dropdown__link--exit">
+                                Выйти
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown__team">
+                        <div class="dropdown__caption">
+                            В команде так же состоят:
+                        </div>
+                        <ul>
+                            <li class="dropdown__team-member">
+                                <img class="dropdown__av" src="img/av.png" alt="">
+                                <div class="dropdown__username">
+                                    Евгения Орлова
+                                </div>
+                            </li>
+                            <li class="dropdown__team-member">
+                                <img class="dropdown__av" src="img/av.png" alt="">
+                                <div class="dropdown__username">
+                                    Евгения Лололова
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="dropdown__caption bold black">
+                            Осталось 3 места
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="logo"></div>
+        <div class="header__layer">
+            <p>
+                Напиши лучшее эссе или спланируй лучший эко-проект и получи тур на Байкал!
+            </p>
+            <button class="btn btn--gradient">
+                участвовать
+            </button>
+        </div>
+        
+    </div>
+</header>
+<section class="compensation">
+    <div class="mountains"></div> 
+    <div class="container">
+        <img class="compensation__img" src="img/50.png" alt="">
+        <h1>
+            Команды, которые получат компенсацию расходов на реализацию экопроектов
+        </h1>
+    </div>
+</section>
+<section class="winners">
+    <div class="container">
+        <table class="winners__table">
+            <thead>
+                <tr>
+                    <th class="winners__captain">
+                        Капитан
+                    </th>
+                    <th class="winners__list">
+                        Члены комманды
+                    </th>
+                    <th class="winners__project">
+                        Эко-проект
+                    </th>
+                    <th class="winners__check">
+                        Фотоотчет
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=10">
+                        Константинопольский Константинополь
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=11">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=12">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=13">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        Чистая среда
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=0">
+                        Володарская Ольга
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=1">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=2">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=3">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        <a href="#">
+                            Народный огород целебных трав в Лефортово
+                        </a>
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=5">
+                        Анисимов Алексей
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=6">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=7">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=8">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=9">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        <a href="#">
+                            ЭКОсфера своими руками
+                        </a>
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=10">
+                        Константинопольский Константинополь
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=11">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=12">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=13">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        Чистая среда
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=0">
+                        Володарская Ольга
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=1">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=2">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=3">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        <a href="#">
+                            Народный огород целебных трав в Лефортово
+                        </a>
+                    </td>
+                    <td class="winners__check">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=5">
+                        Анисимов Алексей
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=6">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=7">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=8">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=9">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        <a href="#">
+                            ЭКОсфера своими руками
+                        </a>
+                    </td>
+                    <td class="winners__check">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=10">
+                        Константинопольский Константинополь
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=11">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=12">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=13">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        Чистая среда
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=0">
+                        Володарская Ольга
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=1">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=2">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=3">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        <a href="#">
+                            Народный огород целебных трав в Лефортово
+                        </a>
+                    </td>
+                    <td class="winners__check">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=5">
+                        Анисимов Алексей
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=6">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=7">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=8">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=9">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        <a href="#">
+                            ЭКОсфера своими руками
+                        </a>
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="extra">
+    <div class="clouds"></div>
+    <div class="container">
+        <article class="extra__article">
+            <h2>
+                Не успел подать заявку?
+            </h2>
+            <p>
+                Не успели принять участие в конкурсе? Ловите нашу Green Wave и присоединяйтесь к благотворительному
+                фонду World Around You. Создавайте экопроекты, участвуйте в наших «зеленых» акциях и делайте мир лучше.
+                Предлагайте свои идеи через наш сайт, и, возможно, мы поможем вам воплотить их в жизнь!
+            </p>
+        </article>
+    </div>
+</section>
+<section class="winners">
+    <div class="container">
+        <table class="winners__table">
+            <thead>
+                <tr>
+                    <th class="winners__captain">
+                        Капитан
+                    </th>
+                    <th class="winners__list">
+                        Члены комманды
+                    </th>
+                    <th class="winners__project">
+                        Эко-проект
+                    </th>
+                    <th class="winners__check">
+                        Фотоотчет
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=10">
+                        Константинопольский Константинополь
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=11">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=12">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=13">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        Чистая среда
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=0">
+                        Володарская Ольга
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=1">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=2">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=3">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        <a href="#">
+                            Народный огород целебных трав в Лефортово
+                        </a>
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=5">
+                        Анисимов Алексей
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=6">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=7">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=8">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=9">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        <a href="#">
+                            ЭКОсфера своими руками
+                        </a>
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=10">
+                        Константинопольский Константинополь
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=11">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=12">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=13">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        Чистая среда
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=0">
+                        Володарская Ольга
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=1">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=2">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=3">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        <a href="#">
+                            Народный огород целебных трав в Лефортово
+                        </a>
+                    </td>
+                    <td class="winners__check">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=5">
+                        Анисимов Алексей
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=6">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=7">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=8">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=9">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        <a href="#">
+                            ЭКОсфера своими руками
+                        </a>
+                    </td>
+                    <td class="winners__check">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=10">
+                        Константинопольский Константинополь
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=11">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=12">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=13">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        Чистая среда
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=0">
+                        Володарская Ольга
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=1">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=2">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=3">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        <a href="#">
+                            Народный огород целебных трав в Лефортово
+                        </a>
+                    </td>
+                    <td class="winners__check">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=5">
+                        Анисимов Алексей
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=6">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=7">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=8">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=9">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        <a href="#">
+                            ЭКОсфера своими руками
+                        </a>
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="smi">
+    <div class="container">
+        <img class="smi__dash" src="img/dash3.png" alt="">
+        <article class="smi__article">
+            <div class="caption">
+                Участие лдя СМИ
+            </div>
+            <h2>
+                Признайся в любви Байкалу — выиграй поездку с «Охотниками»!
+            </h2>
+            <p>
+                Если ты журналист, блоггер или просто мастер слова, напиши эссе на эко-тему и пришли нам до 31-го мая.
+                Авторы пяти лучших работ отправятся в экспедицию к самому глубокому озеру в мире вместе с «Охотниками за
+                травами»!
+            </p>
+            <footer class="smi__footer">
+                <button class="btn btn--purple">
+                    участвовать
+                </button>
+                <div class="smi__links">
+                    <a class="link" href="#">
+                        Полные правила
+                    </a>
+                    <a class="pdf" href="#">
+                        PDF
+                    </a>
+                </div>
+            </footer>
+        </article>
+        <img class="smi__img" src="img/smi.png" alt="">
+    </div>
+</section>
+<section class="plan">
+    <div class="container">
+        <img class="plan__dash" src="img/dash4.png" alt="">
+        <ul class="js-slider">
+            <li class="plan__item">
+                <article class="plan__article">
+                    <div class="caption">
+                        План путешетсвия
+                    </div>
+                    <h2>
+                        Ты запомнишь эту поездку навсегда!
+                    </h2>
+                    <img class="plan__img" src="img/p1.png" alt="">
+                    <p>
+                        Круиз на катере по водам самого глубокого озера в мире.
+                    </p>
+                    <p>
+                        Пеший поход по Большой Байкальской тропе. Обед из свежевыловленной байкальской рыбы.
+
+                    </p>
+                    <p>
+                        Посещение самого известного места Ольхона – мыса Хобой.
+                    </p>
+                    <p>
+                        Приключения ждут тебя!
+                    </p>
+                </article>
+            </li>
+            <li class="plan__item">
+                <article class="plan__article">
+                    <div class="caption">
+                        День 1
+                    </div>
+                    <h2>
+                        Привет, Байкал!
+                    </h2>
+                    <img class="plan__img" src="img/p2.png" alt="">
+                    <p>
+                        Знакомься с самым глубоким озером в мире, погружаясь в него на виртуальной экскурсии
+                        и окидывая взглядом с высоты птичьего полета. Невероятно красивые панорамы ждут — готовь
+                        фотоаппарат!
+                    </p>
+                </article>
+            </li>
+            <li class="plan__item">
+                <article class="plan__article">
+                    <div class="caption">
+                        День 2
+                    </div>
+                    <h2>
+                        Все на борт!
+                    </h2>
+                    <img class="plan__img" src="img/p3.png" alt="">
+                    <p>
+                        Мы расскажем тебе все, что знаем об экотуризме. Отправляйся в захватывающий круиз на катере,
+                        чтобы своими глазами увидеть знаменитую Кругобайкальскую железную дорогу и принять участие в
+                        захватывающем приключенческом квесте.
+                    </p>
+                </article>
+            </li>
+            <li class="plan__item">
+                <article class="plan__article">
+                    <div class="caption">
+                        День 3
+                    </div>
+                    <h2>
+                        Оставь свой след!
+                    </h2>
+                    <img class="plan__img" src="img/p4.png" alt="">
+                    <p>
+                        Помоги сделать один из самых известных пеших маршрутов Байкала лучше!
+                    </p>
+                    <p>
+                        Ты сможешь принять участие в обустройстве Большой Байкальской тропы – не одна сотня ног скажет
+                        тебе спасибо!
+                    </p>
+                </article>
+            </li>
+            <li class="plan__item">
+                <article class="plan__article">
+                    <div class="caption">
+                        День 4
+                    </div>
+                    <h2>
+                        Добавь зелени!
+                    </h2>
+                    <img class="plan__img" src="img/p5.png" alt="">
+                    <p>
+                        У тебя будет возможность посадить свое первое дерево на острове Ольхон! Однажды ты сможешь
+                        показать свое дерево внукам в одном из самых красивейших мест мира!
+                    </p>
+                </article>
+            </li>
+            <li class="plan__item">
+                <article class="plan__article">
+                    <div class="caption">
+                        День 5
+                    </div>
+                    <h2>
+                        Наслаждайся природой!
+                    </h2>
+                    <img class="plan__img" src="img/p6.png" alt="">
+                    <p>
+                        Отправляйся на самый северный мыс Ольхона – Хобой, чтобы наполниться энергией Байкала. Простор,
+                        свежая уха, песни у костра под гитару
+                        до самого утра и сюрпризы от «Сибирского здоровья» ждут тебя!
+                    </p>
+                </article>
+            </li>
+            <li class="plan__item">
+                <article class="plan__article">
+                    <div class="caption">
+                        День 6
+                    </div>
+                    <h2>
+                        Прощание с Байкалом и поездка в Иркутск
+                    </h2>
+                    <img class="plan__img" src="img/p7.png" alt="">
+                    <p>
+                        В начале дня у вас будет свободное время, чтобы прогуляться и попрощаться с красотами Байкала.
+                        Затем мы отправляемся в Иркутск, где пройдёт экскурсия по этому одному из старейших сибирских
+                        городов.
+                    </p>
+                </article>
+            </li>
+            <li class="plan__item">
+                <article class="plan__article">
+                    <div class="caption">
+                        День 7
+                    </div>
+                    <img class="plan__img" src="img/p8.png" alt="">
+                    <h2>
+                        Улетаем, но обязательно вернемся!
+                    </h2>
+                    <p>
+                        Завтрак в отеле и трансфер в аэропорт Иркутска.
+                    </p>
+                </article>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="register">
+    <div class="mountains"></div> 
+    <div class="container">
+        <img class="register__dash" src="img/dash5.png" alt="">
+        <h2>
+            Регистрация
+        </h2>
+        <div class="register__row">
+            <div class="register__box">
+                <img src="img/r1.png" alt="">
+                <h3>
+                    Собрать команду
+                </h3>
+                <p>
+                    Собери команду друзей и спланируйте эко-проект в любой точке мира
+                </p>
+                <button class="btn btn--green">
+                    Регистрация
+                </button>
+            </div>
+            <div class="register__box">
+                <img src="img/r2.png" alt="">
+                <h3>
+                    Вступить
+                    в команду
+                </h3>
+                <p>
+                    Станьте частью команды, спланируйте эко-проект и выиграйте тур на Байкал
+                </p>
+                <button class="btn btn--blue">
+                    Регистрация
+                </button>
+            </div>
+            <div class="register__box">
+                <img src="img/r3.png" alt="">
+                <h3>
+                    Участие
+                    для СМИ
+                </h3>
+                <p>
+                    Признайтесь в любви, напишите эссе на тему “Байкал, я люблю тебя!”
+                </p>
+                <button class="btn btn--purple">
+                    Регистрация
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <h3>
+            Следите за новостями
+        </h3>
+        <ul class="social">
+            <li>
+                <a href="#">
+                    <img src="img/vk.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/fb.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/inst.png" alt="">
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="footer__link link">Написать службе поддержки конкурса</a>
+    </div>
+</footer>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="js/autosize.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
