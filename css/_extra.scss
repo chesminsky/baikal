@@ -1,0 +1,42 @@
+.extra {
+  position: relative;
+  text-align: center;
+  padding: 90px 0;
+  height: 375px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 30px 0;
+
+  .clouds {
+    background-image: url(../img/clouds.png);
+    background-size: 1920px 375px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 375px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 0;
+  }
+
+  &__article {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 900px;
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    p {
+      color: #333333;
+      font-size: 16px;
+      @media (min-width: 900px) {
+        font-size: 22px;
+        line-height: 33px;
+      }
+    }
+  }
+}
