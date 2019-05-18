@@ -1,0 +1,82 @@
+.winners {
+  &__table {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 935px;
+    table-layout: fixed;
+    border-spacing: 0;
+
+    thead {
+      text-align: left;
+      th {
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #a8b1ba;
+        padding: 10px;
+      }
+    }
+
+    tbody {
+      td {
+        border-bottom: 1px solid #f1f1f1;
+        font-size: 19px;
+        color: #333333;
+        padding: 10px;
+
+        a {
+          color: #2994e5;
+        }
+        img {
+          vertical-align: middle;
+        }
+
+        img {
+          border-radius: 50%;
+          border: 3px solid white;
+        }
+      }
+    }
+  }
+
+  &__captain {
+    width: 35%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    img {
+      margin-right: 13px;
+    }
+  }
+
+  &__list {
+    width: 20%;
+    li {
+      display: inline-block;
+      width: 30px;
+      position: relative;
+      z-index: 1;
+      &:hover {
+        z-index: 2;
+      }
+    }
+  }
+
+  &__project {
+    width: 35%;
+    line-height: 30px;
+  }
+
+  &__check {
+    border-bottom: none !important;
+    width: 10%;
+    text-align: center;
+
+    &-icon {
+      display: inline-block;
+      width: 14px;
+      height: 15px;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAYAAADUFP50AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEWSURBVHgBnVI9UgJhDE2CWnuE9QZSOmOhNhY20lniDXYLtNwsnbPjrKMX4AaUjhVYaAtH2CPQMyQk/A0sfwtpspsvL++9fB/AkYGHNIecnZ8i9YYqVToEeEaV2PMHR4OTsqAGZ3VVDUnlwv9LAV85C0ZImaokKUe510pJFaSOLWPwzhHPa3sZX5pfsTEFonK7XCfTfrkNNPUlDKgtY+uuANVk+NQiyH0BktdzEk2K54QqkU8tgs1X21Jg3vhttpDlqPx3f/pXN/foDdd3D/DX+f6dDtEnl5jGYbLJxuLlNJqfbVB9BMSW5fpEoi1kE9tE6vxjKKNnb56BYJvENUaAxUX3UDVPOazCjlh5AM5gi6oRaA32xBhfEXub7o8WZAAAAABJRU5ErkJggg==);
+    }
+  }
+}
