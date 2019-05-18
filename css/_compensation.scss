@@ -1,0 +1,51 @@
+.compensation {
+  position: relative;
+  margin-top: -50px;
+  min-height: 90px;
+  @media (min-width: 1300px) {
+    margin-top: -210px;
+  }
+  margin-bottom: 70px;
+  .mountains {
+    @media (min-width: 1300px) {
+      background-image: url(../img/mountains.png);
+      background-size: 1920px 802px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 802px;
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      right: 0;
+      z-index: -1;
+      top: -150px;
+    }
+  }
+
+  h1 {
+    position: absolute;
+    width: 75%;
+    left: 25%;
+    top: 0;
+    font-size: 4.5vw;
+
+    color: #333333;
+    padding-left: 20px;
+
+    @media (min-width: 1300px) {
+      top: 15%;
+      left: 45%;
+      width: 540px;
+      font-size: 49px;
+      line-height: 56px;
+    }
+  }
+
+  &__img {
+    width: 25%;
+    margin-left: 10px;
+    @media (min-width: 1300px) {
+      width: auto;
+    }
+  }
+}
