@@ -1,11 +1,13 @@
 .winning-team {
+	margin-bottom: 20px;
 	.container {
 		max-width: 1000px;
-  }
-  @media (min-width: 1000px) {
-    margin-top: -700px;
-  }
-  margin-top: -820px;
+	}
+	@media (min-width: 1000px) {
+		margin-top: -700px;
+		margin-bottom: 100px;
+	}
+	margin-top: -820px;
 
 	& + .compensation {
 		margin-top: 0;
@@ -68,13 +70,13 @@
 		text-transform: uppercase;
 
 		color: #a8b1ba;
-  }
-  
-  &__small-title {
-    font-size: 11px;
-    line-height: 13px;
-    margin-top: 5px;
-  }
+	}
+
+	&__small-title {
+		font-size: 11px;
+		line-height: 13px;
+		margin-top: 5px;
+	}
 
 	&__list {
 		li {
@@ -128,24 +130,24 @@
 		}
 	}
 	.winning-team__block--sm {
-    &.is-active {
-      background: #89C42D;
-      img {
-        border-color: transparent;
-      }
-      &  * {
-        color: white !important;
-      }
-    }
-    box-shadow: 0px 30px 90px rgba(29, 43, 57, 0.102);
-    margin-bottom: 70px;
+		&.is-active {
+			background: #89c42d;
+			img {
+				border-color: transparent;
+			}
+			& * {
+				color: white !important;
+			}
+		}
+		box-shadow: 0px 30px 90px rgba(29, 43, 57, 0.102);
+		margin-bottom: 70px;
 
 		.winning-team__captain {
 			margin-bottom: 20px;
 		}
 
 		@media (min-width: 1000px) {
-      margin-bottom: 20px;
+			margin-bottom: 20px;
 			padding-left: 115px;
 			position: relative;
 			.winning-team__avatar {
