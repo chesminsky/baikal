@@ -2,12 +2,12 @@
 	margin-top: -700px;
 	& + .compensation {
 		margin-top: 0;
-  }
-  
-  img {
-    border-radius: 50%;
-    border: 3px solid white;
-  }
+	}
+
+	img {
+		border-radius: 50%;
+		border: 3px solid white;
+	}
 
 	&__header {
 		font-family: GloberM;
@@ -19,39 +19,51 @@
 	}
 
 	&__block {
+    position: relative;
 		background-color: white;
 		border-radius: 10px;
-    margin-bottom: 70px;
-    padding: 42px;
+    margin: 0 20px 70px;
+		padding: 42px;
 		&:after {
 			display: table;
 			content: "";
 			clear: both;
-		}
-  }
+    }
 
-  &__avatar {
-    float: left;
-    margin-right: 20px;
-  }
-  
-  &__title {
-    font-family: GloberM;
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 10px;
-  
-    text-transform: uppercase;
-  
-    color: #a8b1ba;
-  }
+    text-align: center;
+    
+    @media (min-width: 1000px) {
+      text-align: inherit;
+      margin: 0 0 70px;
+		}
+	}
+
+	&__avatar {
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    top: 0;
+    @media (min-width: 1000px) {
+      margin: 0;
+      position: static;
+      float: left;
+      margin-right: 20px;
+		}
+	}
+
+	&__title {
+		font-family: GloberM;
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 10px;
+
+		text-transform: uppercase;
+
+		color: #a8b1ba;
+	}
 
 	&__list {
-		// display: none;
-		// @media (min-width: 900px) {
-		//   width: 20%;
-		//   display: table-cell;
-		// }
 		li {
 			display: inline-block;
 			width: 30px;
@@ -65,21 +77,40 @@
 
 	// cols
 	&__captain {
-		width: 30%;
-		float: left;
+    &:after {
+			display: table;
+			content: "";
+			clear: both;
+    }
+    margin-bottom: 10px;
+		@media (min-width: 1000px) {
+			width: 30%;
+			float: left;
+		}
 	}
 	&__others {
-		width: 20%;
-		float: left;
+    margin-bottom: 10px;
+		@media (min-width: 1000px) {
+			width: 20%;
+			float: left;
+		}
 	}
 	&__info {
-		width: 35%;
-		float: left;
+    margin-bottom: 10px;
+		@media (min-width: 1000px) {
+			width: 35%;
+			float: left;
+		}
 	}
 	&__check {
-		width: 15%;
-    float: left;
-    text-align: center;
+    display: none;
+    margin-bottom: 10px;
+		@media (min-width: 1000px) {
+			width: 15%;
+			float: left;
+			text-align: center;
+			display: block;
+		}
 	}
 }
 
