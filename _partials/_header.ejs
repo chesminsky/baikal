@@ -1,7 +1,7 @@
-<% if(main){ %>
+<% if(main || main == "wt"){ %>
 <header class="header">
     <div class="container container--wide">
-<% } else{ %>  
+<% } else{ %>
 <header class="header header--form">
     <div class="container">
  <% } %>
@@ -86,7 +86,7 @@
                 </li>
             </ul>
         </div>
-        <% if(main){ %>
+        <% if(main == true ){ %>
         <div class="logo"></div>
         <div class="header__layer">
             <p>
@@ -96,6 +96,102 @@
                 участвовать
             </button>
         </div>
-        <% } %>
+        <% } else if ( main == "wt") { %>
+          <div class="container winning_team">
+            <h1 class = "wt-h">Победившая команда</h1>
+            <div class="wt-block">
+              <!-- <table class="winners__table">
+                <thead>
+                    <tr>
+                        <th class="wt winners__captain">
+                            Капитан
+                        </th>
+                        <th class="wt  winners__list">
+
+                        </th>
+                        <th class="wt winners__project">
+                            Эко-проект
+                        </th>
+                        <th class="wt winners__check">
+                            Фотоотчет
+                        </th>
+                    </tr>
+                </thead>
+                <tr class ="wt-table">
+                    <td class="wt winners__captain">
+                        <img src="https://picsum.photos/50/50?rand=10">
+
+                        Анисимов Алексей
+                    </td>
+                    <td class="winners__list">
+                        <ul>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=11">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=12">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=13">
+                            </li>
+                            <li>
+                                <img src="https://picsum.photos/50/50?rand=4">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="winners__project">
+                        Чистая среда
+                    </td>
+                    <td class="winners__check">
+                        <i class="winners__check-icon"></i>
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+              </table> -->
+            <div class="wtb-flex-container">
+              <div class="wtb-avatar">
+                  <img src="https://picsum.photos/50/50?rand=10">
+                </div>
+                <div class="wtb-info">
+                  <p class ="wtb-info-h">капитан</p>
+                  <p class ="wtb-info-captain-name">Анисимов Алексей</p>
+                </div>
+                <div class="wtb-team winners__list">
+                  <ul>
+                      <li>
+                          <img src="https://picsum.photos/50/50?rand=11">
+                      </li>
+                      <li>
+                          <img src="https://picsum.photos/50/50?rand=12">
+                      </li>
+                      <li>
+                          <img src="https://picsum.photos/50/50?rand=13">
+                      </li>
+                      <li>
+                          <img src="https://picsum.photos/50/50?rand=4">
+                      </li>
+                  </ul>
+                </div>
+                <div class="wtb-project">
+                  <p class ="wtb-info-h">эко-проект</p>
+                  <p>лаллааллалалалалала</p>
+                </div>
+                <div class="wtb-check">
+                  <p class ="wtb-info-h">фотоотчет</p>
+                  <i class="winners__check-icon"></i>
+                </div>
+              </div>
+            </div>
+            <h1 class = "wt-h">Победившие СМИ</h1>
+            <div class="wmm-grid">
+              <div class="wmm-block"></div>
+              <div class="wmm-block"></div>
+              <div class="wmm-block"></div>
+              <div class="wmm-block"></div>
+              <div class="wmm-block"></div>
+            </div>
+          </div>
+        <% }%>
     </div>
 </header>
